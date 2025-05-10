@@ -7,16 +7,18 @@ nav.top {
   width: calc(100% - 3rem);
   z-index: 100;
   padding: 0 1.5rem;
+  background-color: #0b0050;
+  border-radius: 27px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Behind the nav content */
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -1; /* Behind the nav content */
+  // }
 
   a#skip-content {
     position: absolute;
@@ -45,6 +47,12 @@ nav.top {
       width: 5rem;
       z-index: 11;
     }
+  }
+
+  .disclaimer {
+    margin-bottom: 0;
+    font-variation-settings: "wght" 500;
+    color: $candyBlue;
   }
 
   a#menuToggleAnchor {

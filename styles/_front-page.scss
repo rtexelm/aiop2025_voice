@@ -5,24 +5,30 @@ main.home {
     @include page-slide;
   }
 
-  #frontpage-background {
-    position: fixed;
-    top: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: url(assets/Homepage_BG.jpg) top center no-repeat scroll;
-    opacity: 0.8;
-    z-index: -100;
-    background-size: cover;
-  }
+  background: linear-gradient(180deg, #0b0050 23%, #0a008e 45%);
+
+  // #frontpage-background {
+  //   position: fixed;
+  //   top: 0px;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   // background: url(assets/Homepage_BG.jpg) top center no-repeat scroll;
+  //   opacity: 0.8;
+  //   z-index: -100;
+  //   background-size: cover;
+  // }
 
   .header {
+    // height: 100vh;
     z-index: 0;
     position: relative;
     min-height: 65vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    background: #320784;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 180px;
 
     #pattern-r-top {
       z-index: 10;

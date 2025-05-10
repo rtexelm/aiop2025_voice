@@ -17,7 +17,7 @@ get_header();
 ?>
 
 <main class="home" id="main-content">
-    <div id="frontpage-background"></div>
+    <!-- <div id="frontpage-background"></div> -->
     <section class="header">
         <!-- Title text -->
         <article id="title">
@@ -31,17 +31,31 @@ get_header();
     </section>
     <section id="dates">
         <h2 class="date-text h1">
-            <span class="month">October</span>
+            <span class="month">July</span>
             <span class="days">
-                <div style="display:inline-block">18&ndash;</div>20,<span class="year">
-                    2024
+                <div style="display:inline-block">25&ndash;</div>27,<span class="year">
+                    2025
                 </span>
             </span>
+            <span class="city">West Hollywood,</span>
+            <span class="state">California</span>
+
         </h2>
         <div class="date-buttons">
-            <a class="button light-coral" href="<?php echo home_url(); ?>/schedule">Schedule</a>
-            <a class="button bright-blue" href="<?php echo home_url(); ?>/public-programs">Public
-                Programs</a>
+            <ul>
+                <li>
+                    Friday July 25
+                    Plummer Park
+                </li>
+                <li>
+                    Saturday July 26
+                    West Hollywood Park
+                </li>
+                <li>
+                    Sunday July 27
+                    Sunset Boulevard
+                </li>
+            </ul>
         </div>
         <div class="date-care">
             <p class="p1"><span class="italic">Art in Odd Places 2024: CARE</span> features visual and performance

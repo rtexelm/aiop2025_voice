@@ -57,10 +57,10 @@
             @include nav-links;
             // text-transform: uppercase;
             text-decoration: none;
-            color: $black;
+            color: $white;
             letter-spacing: 1px;
             &:hover {
-              color: $white;
+              color: $blueCream;
             }
             &:focus {
               border-top: 1px solid $black;

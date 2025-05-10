@@ -36,7 +36,6 @@ body {
 }
 
 body {
-  background: #004056;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -430,15 +429,8 @@ nav.top {
   width: calc(100% - 3rem);
   z-index: 100;
   padding: 0 1.5rem;
-}
-nav.top::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Behind the nav content */
+  background-color: #0b0050;
+  border-radius: 27px;
 }
 nav.top a#skip-content {
   position: absolute;
@@ -465,6 +457,11 @@ nav.top a#home {
 nav.top a#home img#aiopLogo {
   width: 5rem;
   z-index: 11;
+}
+nav.top .disclaimer {
+  margin-bottom: 0;
+  font-variation-settings: "wght" 500;
+  color: #0fa5dc;
 }
 nav.top a#menuToggleAnchor {
   margin: auto;
@@ -553,18 +550,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: voice, blue
 Text Domain: aiop-voice
 */
+main.home {
+  background: linear-gradient(180deg, #0b0050 23%, #0a008e 45%);
+}
 main.home * :not(.bg-wrapper, .page-down) {
   animation: slide-in 1500ms;
-}
-main.home #frontpage-background {
-  position: fixed;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
-  background: url(assets/Homepage_BG.jpg) top center no-repeat scroll;
-  opacity: 0.8;
-  z-index: -100;
-  background-size: cover;
 }
 main.home .header {
   z-index: 0;
@@ -573,6 +563,9 @@ main.home .header {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  background: #320784;
+  border-bottom-left-radius: 180px;
+  border-bottom-right-radius: 180px;
 }
 main.home .header #pattern-r-top {
   z-index: 10;
@@ -1698,11 +1691,11 @@ Text Domain: aiop-voice
     font: 1rem "degular-variable", sans-serif;
     font-variation-settings: "wght" 600, "opsz" 40, "ital" 0;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     letter-spacing: 1px;
   }
   nav.top .menuVisible ul li a:hover {
-    color: #fff;
+    color: #d2eff5;
   }
   nav.top .menuVisible ul li a:focus {
     border-top: 1px solid #000;
