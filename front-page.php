@@ -57,33 +57,24 @@ get_header();
                 </li>
             </ul>
         </div>
-        <div class="date-care">
-            <p class="p1"><span class="italic">Art in Odd Places 2024: CARE</span> features visual and performance
-                artists on 14th Street from Avenue A to the Hudson River, October 18&ndash;20, 2024.</p>
-        </div>
     </section>
 
     <section id="about">
         <h2 class="byline lh-8em h1">
             <span id="byline-1">Curated by</span>
-            <span id="byline-2">Patricia Miranda</span>
-            <span id="byline-3">& Christopher</span>
-            <span id="byline-4">Kaczmarek</span>
+            <span id="byline-2">Deborah Oliver</span>
+            <!-- <span id="byline-3">& Christopher</span>
+            <span id="byline-4">Kaczmarek</span> -->
         </h2>
         <div class="about-text">
             <div class="curatorial">
-                <p class="p1">Care is a ripple.</p>
-                <p class="p1">From intimate to global, from self-care, care of family and lover, friend and neighbor,
-                    town and city, state and country, the global world, care undulates out to our whole island planet
-                    and every species upon it. To care is to look after, provide for, to watch over, to grieve, to
-                    lament, to cry, to feel concern, to attach importance.</p>
-                <p class="sm">Art opens a space of empathy – an invitation to see through the eyes and heart and mind of
-                    another. An act of hope and imagination – art can help us dream new ways and new worlds into being.
-                    We invite you to imagine together how we can bring care to one another and our fraught and fragile
-                    world. <span class="italic">AiOP 2024</span> asks how art can create spaces and actions of
-                    compassionate fearless care.</p>
+                <p class="p1">
+                    Presented by The City of West Hollywood and curated by Deborah Oliver, <span class="italic">AiOP
+                        2025 VOICE</span> celebrates the 40th year of West Hollywood's incorporation as an independent
+                    municipality and the 20th edition of this iconic public visual and performance art festival.
+                </p>
             </div>
-            <a class="button mustard" href="<?php echo home_url(); ?>/about">About the festival</a>
+            <!-- <a class="button mustard" href="<?php echo home_url(); ?>/about">About the festival</a> -->
         </div>
     </section>
 
@@ -91,41 +82,56 @@ get_header();
         <div class="artists-heading">
 
             <h2 class="lh-8em h1">
-                <span id="artists-count">75+ Artists'</span>
+                <span id="artists-count">35+ Artists'</span>
                 <span id="artists-projects"> Projects</span>
             </h2>
         </div>
-        <div class="artists-buttons">
+        <!-- <div class="artists-buttons">
             <a class="button beige" href="<?php echo home_url(); ?>/artists">Artists</a>
             <a class="button light-coral" href="<?php echo home_url(); ?>/schedule">Schedule</a>
-        </div>
+        </div> -->
         <div class="artists-list">
-            <p class="p2">Abigail Simon & Marina Zurkow |Alexandra Neuman | Amanda Wu, Yasmeen Abdallah & Ying Chen |
-                Amelia Marzec | AnimaeNoctis (Silvia Marcantoni Taddei & Massimo Sannelli) | Anna Miller | Augustus
-                Wendell | Barbara Ann Michaels | Bonny Leibowitz | Buddy YoMA | Chanika Svetvilas | Chere Krakovsky |
-                Claudine Arendt | Connie Perry | Creatures From The Hole Poetry & Film Collective//Autocracy: The Pink,
-                Thing, Frend, Wun, bug/war, Mon, Chi-Chi, Guerilla, (W)horse, The, Dog, Revolutionary Abject & Puppet
-                Horde | Cynthia Reynolds | David Appel, Randy Burd, Paris Cullen, Ann Duffy, Sophia Dunn-Fox, Cecilia
-                Fontanesi, Ava Heller, Emilee Lord, Noa Covelo Lores & Nicole Touzien | David Darts | Day de Dada
-                Performance Art Collective: Vivian Vassar, Barbara Lubliner, Jennifer Weigel, Eileen Ramos & Mary
-                Campbel | Deirdre Macleode | doblespiral: María Bonomi & Lucía Cozz | Domenica Garcia | Doreen Chan |
-                Earthworks | Gabbing with Gays: Zach Rothman-Hicks & André Knights | Geraldo Zamproni | Giannina Gomez,
-                with collaborators: Savannah Claudia Levin, Kalan Sherrard, Crackhead Barney, & more | Gretchen Vitamvas
-                | Janine Renee Cunningham | Jared leClaire & Kirstin Dunlap | Jessica Duby | Jo Blin |
-                Jo Yarringtone | Julia Justo | Karen Kalkstein | Katie Cercone | Ken Rinaldo | Kiki McGrath | Kristin
-                Mariani and Heather Lyon with Misael Soto | Laura Nova, Michele Kahane & Sara Koller | Laura Reeder |
-                Laure Drogoul | Leah Crosby | Lichen Likers: Alex Buchan, Amy Youngs, Anna Arbogast, Doosung Yoo, Jiara
-                Sha & Madison Blue | Lisa Hein | Maisie Luo | Maria Seddio, Pia Tempestini, and the WasherWoman
-                Collective | Mariana Maia | Nima Nikakhlagh |Priscilla Stadler, Fan Kong, and Renè Sing | Rachelle
-                Beaudoin | Rae Goodwin | Sally Apfelbaum | Serena Buschi | Shirah Rubin | Susan Wolf | Suh Amorim with
-                Pedro Garcia | Sylvain Souklaye | tasha dougé | Terry S Hardy | The Bureau of Non Competitive Research:
-                Stacey Cann, José Cortés, Daniel Fiset, Po B. K. Lomami & Victoria Stanton | The Department NYC:
-                Emmanuelle Zagoria and Jack Daniel Woods | The Illuminator | The Square Theatre Jiawen: Hu, Jing, Dong |
-                the Web… | | The Why Collective | Theda Sandiford | Thomas Diafas | Unsent Letter Mailbox: Sofia Kavlin
-                & Kelly To | Victoria Boulay| Y Nishizawa | Zhao Mengyu</p>
+            <ul>
+                <li>Brian Black & Zane Alexander S.B.</li>
+                <li>Chelsea Boxwell</li>
+                <li>Oleksandr Brzhezytskyi</li>
+                <li>Jinseok Choi</li>
+                <li>Beck+Col</li>
+                <li>Oscar Corona</li>
+                <li>Issaiha Cunningham</li>
+                <li>Andrea Derujinsky</li>
+                <li>Yadira Dockstader</li>
+                <li>Paul Donald</li>
+                <li>Scott Froschauer</li>
+                <li>Kiyo Gutierrez</li>
+                <li>Terry S. Hardy</li>
+                <li>Asuka Hisa</li>
+                <li>Marcus Kuiland-Nazario</li>
+                <li>Ibuki Kuramochi</li>
+                <li>Mathilda LaZelle</li>
+                <li>Olivia Leiter</li>
+                <li>Curt Lemieux & Marley Vanpeebles</li>
+                <li>Simon Leung</li>
+                <li>Association of Hysteric Curators: Maya Mackrandilal, Mary Anna Pomonis, Monet Clark, Scarlett Kim,
+                    Marjan Vayghan, & Taryn Lee</li>
+                <li>Elana Mann & Chohi Kim</li>
+                <li>Kacie Lyn Martinez</li>
+                <li>Jeff McMahon & William Roper</li>
+                <li>Cade Moga</li>
+                <li>Monica Moreno</li>
+                <li>Dakota Noot</li>
+                <li>Mehregan Pezeshki & Cesar Osorio</li>
+                <li>Jynx Prado</li>
+                <li>Joseph Ravens</li>
+                <li>Renée Reizman</li>
+                <li>christy roberts berkowitz & Abbe Land</li>
+                <li>Saun Santipreecha & Luc Trahand</li>
+                <li>Constance Strickland</li>
+                <li>Wes Weisbaum & Parker Wanamaker</li>
+                <li>David Yashin</li>
         </div>
     </section>
-    <section id="volunteer">
+    <!-- <section id="volunteer">
         <p class="p2">AiOP is a volunteer-run organization; we&rsquo;re always looking for people to help make the
             festival happen in a range of positions. Fill out our form and we&rsquo;ll help find the best spot for you
             on our volunteer team.</p>
@@ -135,9 +141,9 @@ get_header();
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfb5jew752cHdCaXX_1nUN-10t-J81IOpejrz80JqI-Xjq3uQ/viewform">Count
                 me in!</a>
         </div>
-    </section>
+    </section> -->
 
-    <section id="mailing-list">
+    <!-- <section id="mailing-list">
         <div class="text">
             <h2 class="d2">Join our mailing list!</h2>
             <p class="p1">Sign up to keep informed of major festival events and announcements.</p>
@@ -201,8 +207,7 @@ get_header();
             </script>
         </div>
 
-    </section>
-    </div>
+    </section> -->
 </main>
 
 <?php get_footer(); ?>

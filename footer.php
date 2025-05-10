@@ -1,14 +1,12 @@
 		<footer>
 
 		    <div class="footer-col" id="footer-festival">
-		        <p>October 18-20 2024</p>
-		        <p>New York City</p>
-		        <p>14th Street from Avenue A to the Hudson River</p>
+		        <p>July 25&ndash;27, 2025</p>
+		        <p>Presented by The City of West Hollywood, California</p>
 		    </div>
 		    <div class="footer-col" id="footer-people">
-		        <p><a href="https://www.patriciamiranda.com/" target="_blank">Patricia Miranda</a></br>
-		            & <a href="https://www.chriskaczmarek.com/" target="_blank">Christopher Kaczmarek,</a> </br>
-		            Curators
+		        <p>Deborah Oliver, </br>
+		            Curator
 		        </p>
 		        <p><a href="https://edwoodham.com/bio/">Ed Woodham,</a></br>
 		            Founder & Director
@@ -16,21 +14,21 @@
 		        <p><a href="https://lauriewaxman.com" target="_blank">Laurie Waxman,</a></br>
 		            Designer
 		        </p>
-		        <p><a href="https://rossmabbett.com" target="_blank">Ross Mabbett,</a></br>
-		            Web Developer
-		        </p>
 		        <p><a href="https://movingcultureprojects.com/" target="_blank">Robin Schatell,</a></br>
 		            Producer
+		        </p>
+		        <p><a href="https://rossmabbett.com" target="_blank">Ross Mabbett,</a></br>
+		            Web Developer
 		        </p>
 		    </div>
 		    <div class="footer-col" id="footer-contact">
 		        <p>Contact</br>
 		            <a href="mailto:artinodd@gmail.com" target="_blank">artinodd@gmail.com</a>
 		        </p>
-		        <p>Want to help out?</br>
+		        <!-- <p>Want to help out?</br>
 		            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfb5jew752cHdCaXX_1nUN-10t-J81IOpejrz80JqI-Xjq3uQ/viewform"
 		                target="_blank">Volunteer here</a>
-		        </p>
+		        </p> -->
 		    </div>
 		    <div class="footer-col" id="footer-social">
 		        <div class="social">
@@ -49,7 +47,7 @@
 		        </div>
 		    </div>
 		    <div class="footer-col footer-copyright" id="footer-copyright">
-		        <p>© 2024 Art in Odd Places</br>
+		        <p>© 2025 Art in Odd Places</br>
 		            All rights reserved</p>
 		        <p>Art in Odd Places is a project of <a href="http://gohproductions.org/">GOH
 		                Productions</a>.</p>
