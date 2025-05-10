@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  color: $white;
+  color: $lightestBlue;
   padding: 0;
   margin: 0;
 }
@@ -42,7 +42,7 @@ h5,
   font-weight: normal;
   line-height: 1em;
   margin: 0px;
-  color: $white;
+  color: $lightestBlue;
 }
 
 .d1 {
@@ -61,7 +61,7 @@ h5,
 h1,
 .h1 {
   font-size: 3rem;
-  font-variation-settings: "wght" 400, "opsz" 72;
+  font-variation-settings: "wght" 550, "opsz" 72;
   line-height: 0.8em;
   margin-bottom: 0.5rem;
 }
@@ -84,7 +84,8 @@ h4,
 }
 
 p,
-a {
+a,
+.p {
   font-family: $primary-type;
   font-variation-settings: "wght" 300, "opsz" 6;
   margin: 0;
@@ -114,6 +115,14 @@ span.highlight {
 
 .f-weight-250 {
   font-variation-settings: "wght" 250;
+}
+
+.bold {
+  font-variation-settings: "wght" 600;
+}
+
+.semi-bold {
+  font-variation-settings: "wght" 500;
 }
 
 h1.hidden {

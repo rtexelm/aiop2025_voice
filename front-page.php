@@ -41,18 +41,18 @@ get_header();
             <span class="state">California</span>
 
         </h2>
-        <div class="date-buttons">
+        <div class="date-locations h3 semi-bold">
             <ul>
                 <li>
-                    Friday July 25
+                    Friday July 25</br>
                     Plummer Park
                 </li>
                 <li>
-                    Saturday July 26
+                    Saturday July 26</br>
                     West Hollywood Park
                 </li>
                 <li>
-                    Sunday July 27
+                    Sunday July 27</br>
                     Sunset Boulevard
                 </li>
             </ul>
@@ -60,7 +60,7 @@ get_header();
     </section>
 
     <section id="about">
-        <h2 class="byline lh-8em h1">
+        <h2 class="byline h1">
             <span id="byline-1">Curated by</span>
             <span id="byline-2">Deborah Oliver</span>
             <!-- <span id="byline-3">& Christopher</span>
@@ -81,7 +81,7 @@ get_header();
     <section id="artists">
         <div class="artists-heading">
 
-            <h2 class="lh-8em h1">
+            <h2 class="h1">
                 <span id="artists-count">35+ Artists'</span>
                 <span id="artists-projects"> Projects</span>
             </h2>
@@ -91,7 +91,7 @@ get_header();
             <a class="button light-coral" href="<?php echo home_url(); ?>/schedule">Schedule</a>
         </div> -->
         <div class="artists-list">
-            <ul>
+            <ul class="p">
                 <li>Brian Black & Zane Alexander S.B.</li>
                 <li>Chelsea Boxwell</li>
                 <li>Oleksandr Brzhezytskyi</li>
@@ -143,7 +143,7 @@ get_header();
         </div>
     </section> -->
 
-    <!-- <section id="mailing-list">
+    <section id="mailing-list">
         <div class="text">
             <h2 class="d2">Join our mailing list!</h2>
             <p class="p1">Sign up to keep informed of major festival events and announcements.</p>
@@ -207,7 +207,7 @@ get_header();
             </script>
         </div>
 
-    </section> -->
+    </section>
 </main>
 
 <?php get_footer(); ?>

@@ -14,8 +14,8 @@ $deep-green: #05633e;
 $beige: #f4d4a0;
 
 // 2024 Colors
-$darkBlue: #207dca;
-$brightBlue: #50b0c9;
+$darkBlueOld: #207dca;
+$brightBlueOld: #50b0c9;
 $navyBlue: #004056;
 $deepCoral: #f96e47;
 $lightCoral: #ff9676;
@@ -24,8 +24,14 @@ $pink: #ffa3bc;
 $beige: #f2dec4;
 
 // 2025 Colors
-$blueCream: #d2eff5;
-$candyBlue: #0fa5dc;
+$lightestBlue: #d2eff5;
+$brightBlue: #0fa5dc;
+$deepBlue: #0a008e;
+$darkBlue: #0b0050;
+$deepPurple: #320784;
+$brightPurple: #7d30be;
+$lightPurple: #cd44e8;
+$lightBlue: #a9efff;
 
 $primary-type: "degular-variable", sans-serif;
 $display-type: "degular-variable", sans-serif;
@@ -62,7 +68,7 @@ $seciton-padding-720: 5.5rem;
 
 @mixin title-display {
   font: 15vw $display-type;
-  font-variation-settings: "wght" 400, "opsz" 72, "ital" 0; //display
+  font-variation-settings: "wght" 550, "opsz" 72, "ital" 0; //display
   line-height: 0.8em;
 }
 

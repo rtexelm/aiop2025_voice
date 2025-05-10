@@ -36,7 +36,7 @@ body {
 }
 
 body {
-  color: #fff;
+  color: #d2eff5;
   padding: 0;
   margin: 0;
 }
@@ -62,7 +62,7 @@ h5,
   font-weight: normal;
   line-height: 1em;
   margin: 0px;
-  color: #fff;
+  color: #d2eff5;
 }
 
 .d1 {
@@ -81,7 +81,7 @@ h5,
 h1,
 .h1 {
   font-size: 3rem;
-  font-variation-settings: "wght" 400, "opsz" 72;
+  font-variation-settings: "wght" 550, "opsz" 72;
   line-height: 0.8em;
   margin-bottom: 0.5rem;
 }
@@ -107,7 +107,8 @@ h4,
 }
 
 p,
-a {
+a,
+.p {
   font-family: "degular-variable", sans-serif;
   font-variation-settings: "wght" 300, "opsz" 6;
   margin: 0;
@@ -116,7 +117,9 @@ a {
 p span.italic,
 p .italic,
 a span.italic,
-a .italic {
+a .italic,
+.p span.italic,
+.p .italic {
   font-variation-settings: "ital" 1;
 }
 
@@ -138,6 +141,14 @@ span.highlight {
 
 .f-weight-250 {
   font-variation-settings: "wght" 250;
+}
+
+.bold {
+  font-variation-settings: "wght" 600;
+}
+
+.semi-bold {
+  font-variation-settings: "wght" 500;
 }
 
 h1.hidden {
@@ -276,14 +287,14 @@ div.button.beige:hover::after {
 }
 a.button.bright-blue,
 div.button.bright-blue {
-  border: 1px solid #50b0c9;
-  background: #50b0c9;
+  border: 1px solid #0fa5dc;
+  background: #0fa5dc;
   color: #000;
 }
 a.button.bright-blue:hover,
 div.button.bright-blue:hover {
-  border-color: #207dca;
-  background: #207dca;
+  border-color: #0b0050;
+  background: #0b0050;
 }
 a.button.bright-blue:hover::after,
 div.button.bright-blue:hover::after {
@@ -557,7 +568,7 @@ main.home * :not(.bg-wrapper, .page-down) {
 main.home .header {
   z-index: 0;
   position: relative;
-  min-height: 85vh;
+  min-height: 70vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -582,7 +593,7 @@ main.home .header #title h1 {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   font: 15vw "degular-variable", sans-serif;
-  font-variation-settings: "wght" 400, "opsz" 72, "ital" 0;
+  font-variation-settings: "wght" 550, "opsz" 72, "ital" 0;
   line-height: 0.8em;
 }
 main.home .header #title #title-1 {
@@ -634,12 +645,14 @@ main.home #dates {
 }
 main.home #dates .date-text {
   grid-area: 1/2/2/12;
-  line-height: 0.8em;
   display: grid;
 }
-main.home #dates .date-buttons {
+main.home #dates .date-locations {
   grid-area: 2/1/3/end;
   justify-self: end;
+}
+main.home #dates .date-locations li {
+  margin-top: 0.5rem;
 }
 main.home #dates .date-care {
   grid-area: 3/2/4/12;
@@ -722,6 +735,9 @@ main.home #artists .artists-buttons {
 main.home #artists .artists-list {
   grid-area: 3/2/4/12;
 }
+main.home #artists .artists-list li {
+  margin-top: 0.5rem;
+}
 main.home #volunteer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -750,7 +766,7 @@ main.home #mailing-list {
        column-gap: 0;
   row-gap: 1rem;
   padding-bottom: 6rem;
-  background: #50b0c9;
+  background: #0fa5dc;
 }
 main.home #mailing-list .text {
   grid-area: 1/1/2/12;
@@ -1372,7 +1388,7 @@ Text Domain: aiop-voice
   left: 0;
   width: 100%;
   height: 100%;
-  background: #50b0c9;
+  background: #0fa5dc;
   z-index: -10;
 }
 #program-background::before {
@@ -1394,7 +1410,7 @@ main.public-programs {
 }
 main.public-programs .program-container {
   margin-top: 2rem;
-  border-top: 1px solid #207dca;
+  border-top: 1px solid #0b0050;
   padding-top: 1rem;
 }
 main.public-programs .program-container h3 {
@@ -1407,7 +1423,7 @@ main.public-programs .program-container .date,
 main.public-programs .program-container .location,
 main.public-programs .program-container .time {
   padding: 0.5rem 0;
-  border-top: 1px dashed #207dca;
+  border-top: 1px dashed #0b0050;
 }
 main.public-programs .program-container .date h4,
 main.public-programs .program-container .location h4,
@@ -1582,7 +1598,7 @@ Text Domain: aiop-voice
 */
 footer {
   box-sizing: border-box;
-  background: #207dca;
+  background: #0b0050;
   color: #fff;
   z-index: 10;
   padding: 3rem 1.5rem;
@@ -1595,7 +1611,7 @@ footer p a {
 }
 footer a {
   font-weight: 500;
-  color: #b9dfe9;
+  color: #9fdbf1;
   text-decoration: none;
 }
 footer a svg path {
