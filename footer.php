@@ -2,8 +2,8 @@
 
 		    <div class="footer-col" id="footer-festival">
 		        <p>July 25&ndash;27, 2025</p>
-		        <p>Presented by The City of West Hollywood, California</p>
-		        <svg width="100" height="93" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+		        <p>Presented by The City of West Hollywood</p>
+		        <svg class="logo" width="100" height="93" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg">
 		            <g clip-path="url(#clip0_212_1204)">
 		                <path d="M100 0H0V93H100V0Z" fill="white" />
 		                <path
@@ -146,7 +146,7 @@
 		        </svg>
 		    </div>
 		    <div class="footer-col" id="footer-people">
-		        <p>Deborah Oliver, </br>
+		        <p><a href="http://irrationalexhibits.com/#1">Deborah Oliver</a>, </br>
 		            Curator
 		        </p>
 		        <p><a href="https://edwoodham.com/bio/">Ed Woodham,</a></br>
