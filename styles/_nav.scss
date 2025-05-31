@@ -11,16 +11,6 @@ nav.top {
   background-color: #0b0050;
   border-radius: 27px;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: -1; /* Behind the nav content */
-  // }
-
   a#skip-content {
     position: absolute;
     top: -4rem;

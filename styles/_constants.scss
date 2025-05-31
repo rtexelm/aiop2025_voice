@@ -66,6 +66,13 @@ $seciton-padding-720: 5.5rem;
   max-width: 100%;
 }
 
+@mixin four-col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.5rem;
+  max-width: 100%;
+}
+
 @mixin title-display {
   font: 15vw $display-type;
   font-variation-settings: "wght" 550, "opsz" 72, "ital" 0; //display
