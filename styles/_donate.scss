@@ -39,6 +39,7 @@ div#donate-bg {
   }
 }
 main.donate {
+  background: linear-gradient($brightBlue, $brightPurple 100%);
   padding: 4rem 1.5rem;
   color: $black;
   h2 {

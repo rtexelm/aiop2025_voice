@@ -115,6 +115,7 @@ a,
   font-variation-settings: "wght" 300, "opsz" 6;
   margin: 0;
   margin-bottom: 0.25em;
+  line-height: 1.1em;
 }
 p span.italic,
 p .italic,
@@ -336,24 +337,6 @@ div.button p {
   display: inline-block;
 }
 
-.stitches-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-}
-
-.stitches-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-}
-
 .flex-container {
   display: flex;
 }
@@ -528,7 +511,7 @@ nav.top .menuFull ul#menu-full-navigation li {
   border-top: 1px solid #000;
 }
 nav.top .menuFull ul#menu-full-navigation li:hover a {
-  color: #fff;
+  color: #a9efff;
 }
 nav.top .menuFull ul#menu-full-navigation li a {
   padding: 1rem 1.5rem;
@@ -565,7 +548,7 @@ Text Domain: aiop-voice
 main.home {
   background: linear-gradient(180deg, #0b0050 23%, #0a008e 45%);
 }
-main.home * :not(.bg-wrapper, .page-down, #mailing-list) {
+main.home * :not(#frontpage-background) {
   animation: slide-in 1500ms;
 }
 main.home #frontpage-background {
@@ -593,7 +576,10 @@ main.home .header {
   background: #320784;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  padding: 2rem 0 1rem;
+  padding: 1rem 0 1rem;
+}
+main.home .header .title-shape {
+  display: none;
 }
 main.home .header .top-shapes {
   display: flex;
@@ -653,6 +639,15 @@ main.home .header #title .title-images {
   flex-flow: column nowrap;
   gap: 1rem;
   padding: 1rem 0;
+}
+main.home .header #title .title-group {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+main.home .header #title .title-group p {
+  text-align: center;
+  margin-bottom: 0;
 }
 main.home #about,
 main.home #dates,
@@ -808,46 +803,36 @@ Tags: voice, blue
 Text Domain: aiop-voice
 */
 div#about-background {
-  background: #e7a542;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0px;
-  z-index: -10;
+  background: linear-gradient(#0fa5dc 0%, #cd44e8 50%, #0a008e 100%);
 }
 
 main.about {
   position: relative;
 }
-main.about p,
-main.about .p1 {
-  color: #000;
-}
-main.about .dress {
-  padding: 4rem 1.5rem;
+main.about .voice {
+  padding: 6rem 1.5rem 2rem 1.5rem;
   min-height: 60%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
-main.about .dress .c-statement h2 {
+main.about .voice .title {
+  padding-bottom: 2rem;
+}
+main.about .voice .title svg {
+  width: 100%;
+  height: auto;
+}
+main.about .voice .c-statement p {
+  color: #000;
+}
+main.about .voice .c-statement .p1 {
   margin-bottom: 1rem;
-  color: #fff;
 }
 main.about .festival {
   position: relative;
   margin: -1.1vh 0 0;
   padding: 4rem 1.5rem;
-}
-main.about .festival::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.3;
 }
 main.about .festival > * {
   z-index: 10;
@@ -906,6 +891,7 @@ main.about .people #blog-button {
   margin-top: 1.5rem;
 }
 main.about .partners {
+  background: linear-gradient(#a9efff 0%, #0fa5dc 100%);
   position: relative;
   padding: 4rem 1.5rem;
 }
@@ -938,6 +924,7 @@ main.about .partners .button {
   margin-top: 1rem;
 }
 main.about .support {
+  background: linear-gradient(#0a008e 0%, #7d30be 100%);
   position: relative;
   padding: 4rem 1.5rem;
 }
@@ -1067,39 +1054,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: voice, blue
 Text Domain: aiop-voice
 */
-#artists-background {
-  z-index: -10;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: #f2dec4;
-}
-#artists-background::before {
-  content: "";
-  position: absolute;
-  background: url(assets/dress/textures/fabric-texture_fine-woven.jpg);
-  mix-blend-mode: multiply;
-  background-size: 40%;
-  opacity: 0.3;
-  width: 100%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-
 main.artist-listing {
-  padding: 4rem 1.5rem;
+  background: linear-gradient(#d2eff5, #a9efff 100%);
+  padding: 6rem 1.5rem;
 }
 main.artist-listing section.artists span.page-title {
   margin-bottom: 2rem;
 }
 main.artist-listing section.artists span.artist-letter {
+  color: #0b0050;
   margin-bottom: 1rem;
 }
 main.artist-listing section.artists .artist-container {
-  border-top: 1px solid #e7a542;
+  border-top: 1px solid #0fa5dc;
   padding: 1rem 0;
 }
 main.artist-listing section.artists .artist-container .button {
@@ -1110,7 +1077,7 @@ main.artist-listing section.artists .artist-container .list-thumb {
 }
 main.artist-listing section.artists .artist-container .artist-copy h3,
 main.artist-listing section.artists .artist-container .artist-copy h4 {
-  color: #000;
+  color: #0b0050;
   margin-top: 0.5rem;
 }
 main.artist-listing section.artists .container-link {
@@ -1128,20 +1095,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: voice, blue
 Text Domain: aiop-voice
 */
-#project-background {
-  z-index: -10;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: #f96e47;
-}
-
 main.artist-single {
+  background: linear-gradient(#7d30be, #5a25c0 100%);
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  padding: 0 1.5rem;
+  padding: 6rem 1.5rem 0 1.5rem;
 }
 main.artist-single .project-img {
   display: flex;
@@ -1241,17 +1200,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: voice, blue
 Text Domain: aiop-voice
 */
-#schedule-background {
-  z-index: -10;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 100vh;
-  background-color: #ff9676;
-}
-
 main.schedule {
-  margin: 4rem 0;
+  background: linear-gradient(#0a008e, #0b0050 100%);
+  padding: 6rem 1.5rem 2rem 1.5rem;
 }
 main.schedule div.day {
   width: calc(100% - 3rem);
@@ -1518,6 +1469,7 @@ div#donate-bg {
 }
 
 main.donate {
+  background: linear-gradient(#0fa5dc, #7d30be 100%);
   padding: 4rem 1.5rem;
   color: #000;
 }
@@ -1586,7 +1538,7 @@ Text Domain: aiop-voice
 */
 footer {
   box-sizing: border-box;
-  background: #0b0050;
+  background: #320784;
   color: #fff;
   z-index: 10;
   padding: 3rem 1.5rem;
@@ -1693,56 +1645,91 @@ Text Domain: aiop-voice
     font: 1rem "degular-variable", sans-serif;
     font-variation-settings: "wght" 600, "opsz" 40, "ital" 0;
     text-decoration: none;
-    color: #fff;
+    color: #d2eff5;
     letter-spacing: 1px;
   }
   nav.top .menuVisible ul li a:hover {
-    color: #d2eff5;
+    color: #a9efff;
   }
   nav.top .menuVisible ul li a:focus {
     border-top: 1px solid #000;
   }
-  main.home {
-    overflow-y: clip;
-  }
   main.home .header {
-    min-height: 75vh;
-    background: url(assets/dress/tablet/home_header_2160w.jpg) fixed no-repeat;
-    background-size: cover;
-    background-position-x: 50%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  main.home .header .top-shapes,
+  main.home .header .bottom-shapes {
+    display: none;
+  }
+  main.home .header .title-shape {
+    display: block;
+  }
+  main.home .header .title-images {
+    width: 100%;
   }
   main.home .header #title {
     padding: 4rem 1.5rem;
   }
-  main.home .header #title h1 {
-    padding: 0;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-    max-width: 100%;
-    grid-template-rows: repeat(4, 1fr);
+  main.home .header #title .title-group {
+    flex-flow: row nowrap;
+    flex: 0 1 min-content;
+    justify-content: center;
   }
-  main.home .header #title h1 #title-1 {
-    grid-column: 2/8;
-    grid-row: 1/2;
+  main.home .header #title .title-group p {
+    text-align: left;
+    align-self: center;
+    width: -moz-min-content;
+    width: min-content;
   }
-  main.home .header #title h1 #title-2 {
-    grid-column: 3/13;
-    grid-row: 2/3;
+  main.home .header #title svg {
+    flex-shrink: 0.75;
+    height: 12vw;
+    width: auto;
   }
-  main.home .header #title h1 #title-3 {
-    grid-column: 2/12;
-    grid-row: 3/4;
-    justify-self: end;
+  main.home .header #title-shape-1 {
+    width: 30%;
+    max-width: 120px;
+    background: linear-gradient(-81deg, #007ee5, #3ba4ca 73%);
   }
-  main.home .header #title h1 #title-4 {
-    grid-column: 6/10;
-    grid-row: 4/5;
+  main.home .header #title-shape-2 {
+    width: 30%;
+    max-width: 200px;
+    background: linear-gradient(180deg, #0fa5dc, #7d30be 100%);
+    border-radius: 16px;
   }
-  main.home .header #pattern-l-top {
-    top: -12vh;
+  main.home .header #title-shape-3 {
+    width: 30%;
+    max-width: 200px;
+    border-radius: 51px;
+    background: linear-gradient(49deg, #7d30be, #5324ef 50%, #0079d5 100%);
+  }
+  main.home .header #title-shape-4 {
+    width: 30%;
+    background: linear-gradient(180deg, #cd44e8, #7d30be 100%);
+    -webkit-mask: radial-gradient(16px at 16px 16px, rgba(0, 0, 0, 0) 98%, #000) -16px -16px;
+            mask: radial-gradient(16px at 16px 16px, rgba(0, 0, 0, 0) 98%, #000) -16px -16px;
+  }
+  main.home .header #title-shape-5 {
+    width: 30%;
+    max-width: 100px;
+    background: linear-gradient(#7d30be, #0a008e 100%);
+    border-radius: 100%;
+  }
+  main.home .header #title-shape-6 {
+    width: 20%;
+    max-width: 145px;
+    background: linear-gradient(180deg, #cd44e8, #0c47b0 100%);
+    border-radius: 25px;
+  }
+  main.home .header #title-shape-7 {
+    width: 20%;
+    max-width: 120px;
+    background: linear-gradient(#0fa5dc, #4e0dc8 100%);
+  }
+  main.home .header #title-shape-8 {
+    width: 20%;
+    background: #0fa5dc;
   }
   main.home #dates,
   main.home #about,

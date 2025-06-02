@@ -29,7 +29,7 @@
         <a href="#main-content" id="skip-content">Skip to content</a>
         <section class="nav-bar-flex" id="navScroll">
             <a title="home" href="<?php echo get_home_url(); ?>" id="home">
-                <img src="<?php bloginfo('template_url'); ?>/assets/AiOP_Logo_simple.png" id="aiopLogo" alt="AIOP"
+                <img src="<?php bloginfo('template_url'); ?>/assets/AiOP_nav-white.png" id="aiopLogo" alt="AIOP"
                     aria-hidden="true">
             </a>
             <p class="disclaimer">

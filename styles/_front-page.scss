@@ -1,7 +1,7 @@
 @use "constants" as *;
 
 main.home {
-  * :not(.bg-wrapper, .page-down, #mailing-list) {
+  * :not(#frontpage-background) {
     @include page-slide;
   }
 
@@ -33,7 +33,11 @@ main.home {
     background: $deepPurple;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    padding: 2rem 0 1rem;
+    padding: 1rem 0 1rem;
+
+    .title-shape {
+      display: none;
+    }
 
     .top-shapes {
       display: flex;
@@ -85,7 +89,6 @@ main.home {
 
     #title {
       padding: 3rem 1.5rem;
-      // z-index: 20;
       position: relative;
       display: flex;
       flex-flow: column wrap;
@@ -102,6 +105,15 @@ main.home {
         flex-flow: column nowrap;
         gap: 1rem;
         padding: 1rem 0;
+      }
+      .title-group {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        p {
+          text-align: center;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -134,7 +146,6 @@ main.home {
   }
 
   #about {
-    // padding-top: 4rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -187,18 +198,7 @@ main.home {
 
     .artists-heading {
       h2 {
-        // max-width: max-content;
-        // display: flex;
-        // grid-template-columns: repeat(9, 1fr);
         padding-bottom: 2rem;
-
-        #artists-count {
-          // grid-area: 1/1/ 2 / end;
-          // justify-self: end;
-        }
-        #artists-projects {
-          // grid-area: 2/1/ 3 / end;
-        }
       }
     }
     .artists-list {

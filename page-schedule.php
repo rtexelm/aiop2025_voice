@@ -6,7 +6,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-artist
  *
  * @package WordPress
- * @subpackage AiOP_2024
+ * @subpackage AiOP_2025
  * @copyright  AiOP, Laurie Waxman, Ross Mabbett
  * @since 1.0.0
  * @version 1.0.0
@@ -88,7 +88,6 @@ $hover_bg_sources = array(
 );
 
 ?>
-<div id="schedule-background"></div>
 <main class="schedule" id="main-content">
     <h1 class="hidden">ARTISTS</h1>
 

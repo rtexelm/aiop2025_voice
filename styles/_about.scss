@@ -1,33 +1,33 @@
 @use "constants" as *;
 
 div#about-background {
-  background: $mustard;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0px;
-  z-index: -10;
+  background: linear-gradient($brightBlue 0%, $lightPurple 50%, $deepBlue 100%);
 }
 
 main.about {
   position: relative;
 
-  p,
-  .p1 {
-    color: $black;
-  }
-
-  .dress {
-    padding: 4rem 1.5rem;
+  .voice {
+    padding: 6rem 1.5rem 2rem 1.5rem;
     min-height: 60%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 
+    .title {
+      svg {
+        width: 100%;
+        height: auto;
+      }
+      padding-bottom: 2rem;
+    }
+
     .c-statement {
-      h2 {
+      p {
+        color: $black;
+      }
+      .p1 {
         margin-bottom: 1rem;
-        color: $white;
       }
     }
   }
@@ -36,17 +36,6 @@ main.about {
     position: relative;
     margin: -1.1vh 0 0;
     padding: 4rem 1.5rem;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.3;
-    }
 
     & > * {
       z-index: 10;
@@ -120,6 +109,7 @@ main.about {
   }
 
   .partners {
+    background: linear-gradient($lightBlue 0%, $brightBlue 100%);
     position: relative;
     padding: 4rem 1.5rem;
 
@@ -166,6 +156,7 @@ main.about {
   }
 
   .support {
+    background: linear-gradient($deepBlue 0%, $brightPurple 100%);
     position: relative;
     padding: 4rem 1.5rem;
 
@@ -291,49 +282,4 @@ main.about {
       }
     }
   }
-
-  // Use the class for constants and id's for unique elements
-
-  // #container1 {
-  //   position: absolute;
-  //   z-index: -2;
-  //   width: 400vw;
-  //   height: 10vw;
-  //   border-radius: 20vw;
-  //   background-color: $dadbod-yellow;
-  // }
-  // #container2 {
-  //   position: absolute;
-  //   z-index: -2;
-  //   right: 60;
-  //   width: 25vw;
-  //   height: 25vw;
-  //   border-radius: 20vw;
-  //   background-color: $darkBlue;
-  // }
-  // #container3 {
-  //   position: absolute;
-  //   z-index: -4;
-  //   right: 100;
-  //   width: 60vw;
-  //   height: 60vw;
-  //   border-radius: 20vw;
-  //   background-color: $lavender;
-  // }
-  // #container4 {
-  //   position: absolute;
-  //   z-index: -2;
-  //   width: 20vw;
-  //   height: 20vw;
-  //   border-radius: 20vw;
-  //   background-color: $dadbod-yellow;
-  // }
-  // #container5 {
-  //   position: absolute;
-  //   z-index: -3;
-  //   width: 45vw;
-  //   height: 45vw;
-  //   border-radius: 20vw;
-  //   background-color: $brightBlue;
-  // }
 }

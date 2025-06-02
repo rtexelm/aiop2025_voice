@@ -92,6 +92,7 @@ a,
   font-variation-settings: "wght" 300, "opsz" 6;
   margin: 0;
   margin-bottom: 0.25em;
+  line-height: 1.1em;
 
   span.italic,
   .italic {
@@ -303,25 +304,6 @@ div.button {
 
 div.button p {
   display: inline-block;
-}
-
-// Stitches positions
-.stitches-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-}
-
-.stitches-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
 }
 
 // Flex classes

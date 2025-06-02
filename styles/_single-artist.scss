@@ -1,19 +1,11 @@
 @use "constants" as *;
 
-#project-background {
-  z-index: -10;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: $deepCoral;
-}
-
 main.artist-single {
+  background: linear-gradient($brightPurple, #5a25c0 100%);
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  padding: 0 1.5rem;
+  padding: 6rem 1.5rem 0 1.5rem;
 
   .project-img {
     display: flex;
