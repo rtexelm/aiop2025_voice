@@ -1601,6 +1601,7 @@ Text Domain: aiop-voice
     flex-direction: row;
     gap: 1.5rem;
     list-style: none;
+    align-items: center;
   }
   nav.top .menuVisible ul li a {
     font: 1rem "degular-variable", sans-serif;
@@ -2186,7 +2187,7 @@ Text Domain: aiop-voice
     justify-self: end;
     grid-row: 1/2;
   }
-  main.about .dress {
+  main.about .voice {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     -moz-column-gap: 1rem;
@@ -2194,10 +2195,19 @@ Text Domain: aiop-voice
     max-width: 100%;
     align-items: center;
   }
-  main.about .dress .c-statement {
-    grid-column: 3/11;
+  main.about .voice .title {
+    grid-column: 1/13;
+    grid-row: 1/2;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
   }
-  main.about .dress .c-statement p {
+  main.about .voice .c-statement {
+    grid-column: 5/13;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+  main.about .voice .c-statement p {
     margin-bottom: 1rem;
   }
   main.about .festival {

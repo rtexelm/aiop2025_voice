@@ -69,6 +69,7 @@
         flex-direction: row;
         gap: 1.5rem;
         list-style: none;
+        align-items: center;
 
         li {
           a {
@@ -724,11 +725,21 @@
   // About Page ############################################################
 
   main.about {
-    .dress {
+    .voice {
       @include twelve-col-grid;
       align-items: center;
+      .title {
+        grid-column: 1/13;
+        grid-row: 1/2;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+      }
       .c-statement {
-        grid-column: 3/11;
+        grid-column: 5/13;
+        grid-row: 2/3;
+        // margin: 0;
+        justify-self: end;
         p {
           margin-bottom: 1rem;
         }
