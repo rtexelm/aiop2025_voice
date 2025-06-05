@@ -114,6 +114,7 @@
     .heading {
       border-bottom-left-radius: 100px;
       border-bottom-right-radius: 100px;
+      min-height: 0;
 
       .top-shapes,
       .bottom-shapes {

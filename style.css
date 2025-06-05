@@ -1619,6 +1619,7 @@ Text Domain: aiop-voice
   main.home .heading {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    min-height: 0;
   }
   main.home .heading .top-shapes,
   main.home .heading .bottom-shapes {
