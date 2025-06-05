@@ -1083,8 +1083,12 @@ main.artist-listing {
   background: linear-gradient(#d2eff5, #a9efff 100%);
   padding: 6rem 1.5rem;
 }
-main.artist-listing section.artists span.page-title {
-  margin-bottom: 2rem;
+main.artist-listing .page-title {
+  padding-bottom: 2rem;
+}
+main.artist-listing .page-title svg {
+  width: 100%;
+  height: auto;
 }
 main.artist-listing section.artists span.artist-letter {
   color: #0b0050;
@@ -1127,26 +1131,33 @@ main.artist-single {
   width: 100%;
   padding: 6rem 1.5rem 0 1.5rem;
 }
+main.artist-single .page-title {
+  z-index: 0;
+}
+main.artist-single .page-title svg {
+  width: 100%;
+  height: auto;
+}
 main.artist-single .project-img {
+  z-index: 10;
+  margin-top: -4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: calc(100vw - 3rem);
   height: calc(100vw - 3rem);
-  z-index: -5;
-  background-position: center;
-  background-size: cover;
 }
 main.artist-single .project-img div.image-mask {
-  width: 90%;
-  height: 90%;
-  border-radius: 100vw;
+  border-radius: 46px;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 main.artist-single .project-img div.image-mask img {
-  height: 100%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main.artist-single div.project-info-grid {
   position: relative;
@@ -1710,6 +1721,7 @@ Text Domain: aiop-voice
   main.home #dates svg {
     position: relative;
     order: 1;
+    padding: 0;
   }
   main.home #dates .date-text {
     order: 2;
@@ -1840,25 +1852,29 @@ Text Domain: aiop-voice
     max-width: 100%;
     grid-auto-rows: auto;
   }
-  main.artist-single section.project-img {
-    margin: 0;
+  main.artist-single .page-title {
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/13;
+  }
+  main.artist-single .page-title svg {
+    width: 80%;
+    height: auto;
+  }
+  main.artist-single .project-img {
+    margin: 6rem 1.5rem 0 1.5rem;
     position: fixed;
-    width: 100vh;
-    height: 100vh;
+    width: 50vw;
+    height: auto;
     max-width: 600px;
     max-height: 600px;
-    right: 1.5rem;
-  }
-  main.artist-single section.project-img div.image-mask {
-    width: 90%;
-    height: 90%;
-    margin: 0px;
+    top: 5rem;
   }
   main.artist-single div.project-info-grid {
     top: 0px;
-    margin-top: 20vh;
-    grid-column: 1/7;
-    grid-row: 1;
+    grid-column: 8/13;
+    margin-top: -8rem;
   }
   main.artist-single div.project-info-grid .day {
     display: grid;
@@ -2054,7 +2070,17 @@ Text Domain: aiop-voice
     border: none;
     padding-top: 0;
   }
+  main.artist-listing .page-title {
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  main.artist-listing .page-title svg {
+    width: 80%;
+    height: auto;
+  }
   main.artist-listing section.artists {
+    margin-top: -2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     -moz-column-gap: 1rem;

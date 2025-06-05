@@ -3,10 +3,14 @@
 main.artist-listing {
   background: linear-gradient($lightestBlue, $lightBlue 100%);
   padding: 6rem 1.5rem;
-  section.artists {
-    span.page-title {
-      margin-bottom: 2rem;
+  .page-title {
+    svg {
+      width: 100%;
+      height: auto;
     }
+    padding-bottom: 2rem;
+  }
+  section.artists {
     span.artist-letter {
       color: $darkBlue;
       margin-bottom: 1rem;
