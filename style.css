@@ -205,36 +205,6 @@ a.button:focus::after,
 div.button:focus::after {
   margin-left: 1rem;
 }
-a.button.primary-orange,
-div.button.primary-orange {
-  background: #f74500;
-  border: 1px solid #f74500;
-  color: #000;
-}
-a.button.primary-orange:hover,
-div.button.primary-orange:hover {
-  background: #f96e47;
-  border-color: #f96e47;
-}
-a.button.primary-orange:hover::after,
-div.button.primary-orange:hover::after {
-  margin-left: 1rem;
-}
-a.button.deep-coral,
-div.button.deep-coral {
-  background: #f96e47;
-  border: 1px solid #f96e47;
-  color: #000;
-}
-a.button.deep-coral:hover,
-div.button.deep-coral:hover {
-  background: #ffa3bc;
-  border-color: #ffa3bc;
-}
-a.button.deep-coral:hover::after,
-div.button.deep-coral:hover::after {
-  margin-left: 1rem;
-}
 a.button.down-arrow::after,
 div.button.down-arrow::after {
   transform: rotate(90deg);
@@ -243,19 +213,52 @@ a.button.up-arrow::after,
 div.button.up-arrow::after {
   transform: rotate(-90deg);
 }
-a.button.light-coral,
-div.button.light-coral {
-  border: 1px solid #ff9676;
-  background: #ff9676;
+a.button.lightblue,
+div.button.lightblue {
+  background: #a9efff;
+  border: 1px solid #a9efff;
   color: #000;
 }
-a.button.light-coral:hover,
-div.button.light-coral:hover {
-  border-color: #f96e47;
-  background: #f96e47;
+a.button.lightblue:hover::after,
+div.button.lightblue:hover::after {
+  margin-left: 1rem;
 }
-a.button.light-coral:hover::after,
-div.button.light-coral:hover::after {
+a.button.lightpurple,
+div.button.lightpurple {
+  background: #cd44e8;
+  border: 1px solid #cd44e8;
+  color: #000;
+}
+a.button.lightpurple:hover::after,
+div.button.lightpurple:hover::after {
+  margin-left: 1rem;
+}
+a.button.brightblue,
+div.button.brightblue {
+  background: #0fa5dc;
+  border: 1px solid #0fa5dc;
+  color: #000;
+}
+a.button.brightblue:hover,
+div.button.brightblue:hover {
+  border-color: #0b0050;
+}
+a.button.brightblue:hover::after,
+div.button.brightblue:hover::after {
+  margin-left: 1rem;
+}
+a.button.brightpurple,
+div.button.brightpurple {
+  border: 1px solid #7d30be;
+  background: #7d30be;
+  color: #d2eff5;
+}
+a.button.brightpurple:after,
+div.button.brightpurple:after {
+  content: url(assets/arrow-right-light.svg);
+}
+a.button.brightpurple:hover::after,
+div.button.brightpurple:hover::after {
   margin-left: 1rem;
 }
 a.button.pink,
@@ -288,21 +291,6 @@ a.button.beige:hover::after,
 div.button.beige:hover::after {
   margin-left: 1rem;
 }
-a.button.bright-blue,
-div.button.bright-blue {
-  border: 1px solid #0fa5dc;
-  background: #0fa5dc;
-  color: #000;
-}
-a.button.bright-blue:hover,
-div.button.bright-blue:hover {
-  border-color: #0b0050;
-  background: #0b0050;
-}
-a.button.bright-blue:hover::after,
-div.button.bright-blue:hover::after {
-  margin-left: 1rem;
-}
 a.button.mustard,
 div.button.mustard {
   border: 1px solid #e7a542;
@@ -332,9 +320,21 @@ a.button.inline:hover,
 div.button.inline:hover {
   opacity: 0.8;
 }
+a.button.black,
+div.button.black {
+  color: #000;
+}
+a.button.black::after,
+div.button.black::after {
+  content: url(assets/arrow-right-dark.svg);
+}
 
 div.button p {
   display: inline-block;
+}
+
+.display-none {
+  display: none;
 }
 
 .flex-container {
@@ -405,6 +405,23 @@ div.button p {
   display: block;
 }
 
+#fullpage-texture {
+  position: relative;
+  z-index: 11;
+  pointer-events: none;
+}
+#fullpage-texture::before {
+  content: "";
+  mix-blend-mode: color-dodge;
+  position: fixed;
+  background: url(assets/Overlay_Mobile.jpg);
+  background-size: cover;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+}
+
 /*
 Theme Name: AiOP 2025 VOICE
 Theme URI: https://lauriewaxman.com
@@ -442,6 +459,7 @@ nav.top a#skip-content:focus {
 nav.top .nav-bar-flex {
   display: flex;
   flex-flow: row nowrap;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -452,11 +470,6 @@ nav.top a#home {
 nav.top a#home img#aiopLogo {
   width: 5rem;
   z-index: 11;
-}
-nav.top .disclaimer {
-  margin-bottom: 0;
-  font-variation-settings: "wght" 500;
-  color: #0fa5dc;
 }
 nav.top a#menuToggleAnchor {
   margin: auto;
@@ -490,14 +503,14 @@ nav.top .menuFull::before {
   content: "";
   z-index: -1;
   position: absolute;
-  background: #ffa3bc;
-  top: -10%;
+  background: #a9efff;
+  top: -72px;
   right: 0px;
   bottom: 0px;
   left: 0px;
 }
 nav.top .menuFull a {
-  color: #000;
+  color: #0b0050;
   text-decoration: none;
 }
 nav.top .menuFull ul {
@@ -508,10 +521,10 @@ nav.top .menuFull ul#menu-full-navigation li {
   display: block;
   list-style: none;
   font-size: 1.8rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #0b0050;
 }
 nav.top .menuFull ul#menu-full-navigation li:hover a {
-  color: #a9efff;
+  color: #0fa5dc;
 }
 nav.top .menuFull ul#menu-full-navigation li a {
   padding: 1rem 1.5rem;
@@ -522,7 +535,7 @@ nav.top .menuFull ul#menu-full-navigation li a {
   font-weight: 400;
 }
 nav.top .menuFull ul#menu-full-navigation li a:focus {
-  background-color: #f96e47;
+  background-color: #d2eff5;
 }
 nav.top .menuFull ul#menu-full-navigation .submenu {
   font-size: 1.4rem;
@@ -551,23 +564,7 @@ main.home {
 main.home * :not(#frontpage-background) {
   animation: slide-in 1500ms;
 }
-main.home #frontpage-background {
-  position: relative;
-  z-index: 100;
-  pointer-events: none;
-}
-main.home #frontpage-background::before {
-  content: "";
-  mix-blend-mode: color-dodge;
-  position: fixed;
-  background: url(assets/Overlay_Mobile.jpg);
-  background-size: cover;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0.15;
-}
-main.home .header {
+main.home .heading {
   position: relative;
   min-height: 80vh;
   display: flex;
@@ -578,10 +575,10 @@ main.home .header {
   border-bottom-right-radius: 50px;
   padding: 1rem 0 1rem;
 }
-main.home .header .title-shape {
+main.home .heading .title-shape {
   display: none;
 }
-main.home .header .top-shapes {
+main.home .heading .top-shapes {
   display: flex;
   flex-flow: row wrap;
   gap: 0.5rem;
@@ -589,21 +586,21 @@ main.home .header .top-shapes {
   height: 100px;
   padding: 1rem 0;
 }
-main.home .header #top-shape-1 {
+main.home .heading #top-shape-1 {
   flex-grow: 2;
   background: linear-gradient(180deg, #0fa5dc, #7d30be 100%);
   border-radius: 16px;
 }
-main.home .header #top-shape-2 {
+main.home .heading #top-shape-2 {
   flex-grow: 1;
   background: linear-gradient(180deg, #cd44e8, #0c47b0 100%);
   border-radius: 25px;
 }
-main.home .header #top-shape-3 {
+main.home .heading #top-shape-3 {
   flex-grow: 3;
   background: linear-gradient(-81deg, #007ee5, #3ba4ca 73%);
 }
-main.home .header .bottom-shapes {
+main.home .heading .bottom-shapes {
   display: flex;
   flex-flow: row wrap;
   gap: 0.5rem;
@@ -611,18 +608,18 @@ main.home .header .bottom-shapes {
   height: 100px;
   padding: 1rem 0;
 }
-main.home .header #bottom-shape-1 {
+main.home .heading #bottom-shape-1 {
   flex-grow: 3;
   background: linear-gradient(180deg, #cd44e8, #7d30be 100%);
   -webkit-mask: radial-gradient(16px at 16px 16px, rgba(0, 0, 0, 0) 98%, #000) -16px -16px;
           mask: radial-gradient(16px at 16px 16px, rgba(0, 0, 0, 0) 98%, #000) -16px -16px;
 }
-main.home .header #bottom-shape-2 {
+main.home .heading #bottom-shape-2 {
   flex-grow: 2;
   border-radius: 51px;
   background: linear-gradient(49deg, #7d30be, #5324ef 50%, #0079d5 100%);
 }
-main.home .header #title {
+main.home .heading #title {
   padding: 3rem 1.5rem;
   position: relative;
   display: flex;
@@ -630,22 +627,22 @@ main.home .header #title {
   justify-content: center;
   align-items: center;
 }
-main.home .header #title svg {
+main.home .heading #title svg {
   width: 100%;
   height: auto;
 }
-main.home .header #title .title-images {
+main.home .heading #title .title-images {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
   padding: 1rem 0;
 }
-main.home .header #title .title-group {
+main.home .heading #title .title-group {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
 }
-main.home .header #title .title-group p {
+main.home .heading #title .title-group p {
   text-align: center;
   margin-bottom: 0;
 }
@@ -658,11 +655,13 @@ main.home #mailing-list {
   padding-top: 2rem;
 }
 main.home #dates {
+  position: relative;
   padding-top: 4rem;
   display: flex;
   flex-flow: column nowrap;
 }
 main.home #dates .date-locations {
+  z-index: 2;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -671,8 +670,12 @@ main.home #dates .date-locations {
 main.home #dates .date-locations li {
   margin-top: 0.5rem;
 }
-main.home #dates .date-locations svg {
-  margin-top: 2rem;
+main.home #dates svg {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  padding: 0 1.5rem 3.5rem;
 }
 main.home #about {
   display: flex;
@@ -696,6 +699,9 @@ main.home #about .about-text .byline {
 main.home #about .about-text div.curatorial p.sm {
   line-height: 1.2em;
 }
+main.home #about .about-text a {
+  margin-top: 1rem;
+}
 main.home #artists {
   padding-bottom: 6rem;
 }
@@ -714,7 +720,13 @@ main.home #artists .artists-frame::before {
           mask: radial-gradient(18px at 18px 18px, rgba(0, 0, 0, 0) calc(98% - 3px), #000 calc(100% - 3px) 98%, rgba(0, 0, 0, 0)) -18px -18px, linear-gradient(90deg, #000 6px, rgba(0, 0, 0, 0) 0) -3px 50%/100% calc(100% - 36px + 3px) repeat-x, linear-gradient(#000 6px, rgba(0, 0, 0, 0) 0) 50% -3px/calc(100% - 36px + 3px) 100% repeat-y;
 }
 main.home #artists .artists-heading h2 {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+main.home #artists .artists-buttons {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 main.home #artists .artists-list li {
   margin-top: 0.5rem;
@@ -893,7 +905,15 @@ main.about .people #blog-button {
 main.about .partners {
   background: linear-gradient(#a9efff 0%, #0fa5dc 100%);
   position: relative;
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
+}
+main.about .partners a,
+main.about .partners p,
+main.about .partners h2 {
+  color: #0b0050;
+}
+main.about .partners a:after {
+  content: url(assets/arrow-right-dark.svg);
 }
 main.about .partners::before {
   content: "";
@@ -907,11 +927,16 @@ main.about .partners::before {
   opacity: 0.3;
 }
 main.about .partners h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 main.about .partners .partner-container {
-  border-top: 1px solid #f2dec4;
+  border-top: 1px solid #0b0050;
   margin-bottom: 3rem;
+}
+main.about .partners .partner-container img {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem 0;
 }
 main.about .partners .partner-container .partner:last-child {
   margin-bottom: 0;
@@ -1204,15 +1229,25 @@ main.schedule {
   background: linear-gradient(#0a008e, #0b0050 100%);
   padding: 6rem 1.5rem 2rem 1.5rem;
 }
+main.schedule .title {
+  padding-bottom: 2rem;
+}
+main.schedule .title svg {
+  width: 100%;
+  height: auto;
+}
 main.schedule div.day {
   width: calc(100% - 3rem);
-  margin: 4rem 1.5rem 0 1.5rem;
+  margin: 2rem 1.5rem 0 1.5rem;
 }
 main.schedule div.day .day-nav {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5rem;
   margin-bottom: 2rem;
+}
+main.schedule div.day .day-header {
+  margin-bottom: 0.5rem;
 }
 main.schedule div.day#saturday, main.schedule div.day#sunday {
   margin-top: 3rem;
@@ -1221,93 +1256,23 @@ main.schedule div.day h2 {
   margin-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
-main.schedule div.day .pp-container {
+main.schedule div.day .project-schedule {
+  border-top: 1px solid #0fa5dc;
+  padding-top: 1rem;
+}
+main.schedule div.day .listing-container {
   position: relative;
-  border-top: 1px solid #f96e47;
-  padding-top: 0.5rem;
-  margin-bottom: 2rem;
-}
-main.schedule div.day .pp-container h3,
-main.schedule div.day .pp-container h4 {
-  color: #000;
-}
-main.schedule div.day .pp-container a.program-link {
-  display: none;
-}
-main.schedule div.day .pp-container .button {
-  margin-top: 0.5rem;
-}
-main.schedule div.day .artist-container {
-  position: relative;
-  border-top: 1px solid #f96e47;
   margin-bottom: 1rem;
   padding: 0.5rem 0;
 }
-main.schedule div.day .artist-container h3,
-main.schedule div.day .artist-container h4,
-main.schedule div.day .artist-container p {
-  color: #000;
-}
-main.schedule div.day .artist-container a.schedule-link {
+main.schedule div.day .listing-container a.schedule-link {
   display: none;
 }
-main.schedule div.day .artist-container .button {
+main.schedule div.day .listing-container .button {
   margin-top: 0.5rem;
 }
-main.schedule div.day .artist-container .schedule-thumb {
+main.schedule div.day .listing-container .schedule-thumb {
   display: none;
-}
-main.schedule .schedule-bg-element {
-  overflow-x: hidden;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  opacity: 0.8;
-}
-main.schedule .schedule-bg-element#schedule-bg-element1 {
-  height: 130vw;
-  bottom: -40vw;
-}
-main.schedule .schedule-bg-element#schedule-bg-element1 img {
-  right: -60%;
-  position: absolute;
-  height: 100%;
-}
-main.schedule .schedule-bg-element#schedule-bg-element2 {
-  height: 42vw;
-  top: 200vh;
-}
-main.schedule .schedule-bg-element#schedule-bg-element2 img {
-  left: 10%;
-  position: absolute;
-  height: 100%;
-}
-main.schedule .schedule-bg-element#schedule-bg-element3 {
-  height: 200vw;
-  top: -92vw;
-}
-main.schedule .schedule-bg-element#schedule-bg-element3 img {
-  right: -10vw;
-  position: absolute;
-  height: 100%;
-}
-main.schedule .schedule-bg-element#schedule-bg-element4 {
-  height: 130vw;
-  bottom: 150vh;
-}
-main.schedule .schedule-bg-element#schedule-bg-element4 img {
-  right: -26vw;
-  position: absolute;
-  height: 100%;
-}
-main.schedule .schedule-bg-element#schedule-bg-element5 {
-  height: 68vw;
-  bottom: 8vw;
-}
-main.schedule .schedule-bg-element#schedule-bg-element5 img {
-  left: 15%;
-  position: absolute;
-  height: 100%;
 }
 
 /*
@@ -1442,42 +1407,20 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: voice, blue
 Text Domain: aiop-voice
 */
-div#donate-bg {
-  z-index: -10;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: #f2dec4;
-}
-
-.donate-bg-ripple {
-  overflow-x: hidden;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  opacity: 0.6;
-}
-.donate-bg-ripple#donate-ripple-1 {
-  height: 100vw;
-  top: -12vw;
-}
-.donate-bg-ripple#donate-ripple-1 img {
-  position: absolute;
-  height: 100%;
-  left: 18vw;
-}
-
 main.donate {
   background: linear-gradient(#0fa5dc, #7d30be 100%);
-  padding: 4rem 1.5rem;
-  color: #000;
+  padding: 6rem 1.5rem 2rem 1.5rem;
+  color: #0b0050;
 }
-main.donate h2 {
-  color: #000;
+main.donate .page-title svg {
+  width: 100%;
+  height: auto;
+}
+main.donate h3 {
+  color: #0b0050;
 }
 main.donate div.payment-method {
-  border-top: 1px solid #000;
+  border-top: 1px solid #0b0050;
   padding-top: 1rem;
   margin-top: 2rem;
 }
@@ -1539,7 +1482,6 @@ Text Domain: aiop-voice
 footer {
   box-sizing: border-box;
   background: #320784;
-  color: #fff;
   z-index: 10;
   padding: 3rem 1.5rem;
 }
@@ -1548,6 +1490,9 @@ footer p a {
   margin: 0 0 0.5rem 0;
   font-weight: 500;
   font-family: "degular-variable", sans-serif;
+}
+footer svg {
+  padding: 1rem 0;
 }
 footer a {
   font-weight: 500;
@@ -1629,6 +1574,22 @@ Text Domain: aiop-voice
   div.button {
     padding: 0.2em 0.5em 0.1em 0.8em;
   }
+  #fullpage-texture {
+    position: relative;
+    z-index: 11;
+    pointer-events: none;
+  }
+  #fullpage-texture::before {
+    content: "";
+    mix-blend-mode: color-dodge;
+    position: fixed;
+    background: url(assets/Overlay-desktop-New.jpg);
+    background-size: cover;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+  }
   nav.top .menuVisible {
     display: block;
     margin-right: 1rem;
@@ -1654,80 +1615,80 @@ Text Domain: aiop-voice
   nav.top .menuVisible ul li a:focus {
     border-top: 1px solid #000;
   }
-  main.home .header {
+  main.home .heading {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
   }
-  main.home .header .top-shapes,
-  main.home .header .bottom-shapes {
+  main.home .heading .top-shapes,
+  main.home .heading .bottom-shapes {
     display: none;
   }
-  main.home .header .title-shape {
+  main.home .heading .title-shape {
     display: block;
   }
-  main.home .header .title-images {
+  main.home .heading .title-images {
     width: 100%;
   }
-  main.home .header #title {
+  main.home .heading #title {
     padding: 4rem 1.5rem;
   }
-  main.home .header #title .title-group {
+  main.home .heading #title .title-group {
     flex-flow: row nowrap;
     flex: 0 1 min-content;
     justify-content: center;
   }
-  main.home .header #title .title-group p {
+  main.home .heading #title .title-group p {
     text-align: left;
     align-self: center;
     width: -moz-min-content;
     width: min-content;
   }
-  main.home .header #title svg {
+  main.home .heading #title svg {
     flex-shrink: 0.75;
     height: 12vw;
     width: auto;
   }
-  main.home .header #title-shape-1 {
+  main.home .heading #title-shape-1 {
     width: 30%;
     max-width: 120px;
     background: linear-gradient(-81deg, #007ee5, #3ba4ca 73%);
   }
-  main.home .header #title-shape-2 {
+  main.home .heading #title-shape-2 {
     width: 30%;
     max-width: 200px;
     background: linear-gradient(180deg, #0fa5dc, #7d30be 100%);
     border-radius: 16px;
   }
-  main.home .header #title-shape-3 {
+  main.home .heading #title-shape-3 {
     width: 30%;
     max-width: 200px;
     border-radius: 51px;
     background: linear-gradient(49deg, #7d30be, #5324ef 50%, #0079d5 100%);
   }
-  main.home .header #title-shape-4 {
+  main.home .heading #title-shape-4 {
     width: 30%;
     background: linear-gradient(180deg, #cd44e8, #7d30be 100%);
     -webkit-mask: radial-gradient(16px at 16px 16px, rgba(0, 0, 0, 0) 98%, #000) -16px -16px;
             mask: radial-gradient(16px at 16px 16px, rgba(0, 0, 0, 0) 98%, #000) -16px -16px;
   }
-  main.home .header #title-shape-5 {
+  main.home .heading #title-shape-5 {
     width: 30%;
     max-width: 100px;
     background: linear-gradient(#7d30be, #0a008e 100%);
     border-radius: 100%;
   }
-  main.home .header #title-shape-6 {
+  main.home .heading #title-shape-6 {
     width: 20%;
     max-width: 145px;
     background: linear-gradient(180deg, #cd44e8, #0c47b0 100%);
     border-radius: 25px;
   }
-  main.home .header #title-shape-7 {
+  main.home .heading #title-shape-7 {
     width: 20%;
     max-width: 120px;
     background: linear-gradient(#0fa5dc, #4e0dc8 100%);
   }
-  main.home .header #title-shape-8 {
+  main.home .heading #title-shape-8 {
     width: 20%;
     background: #0fa5dc;
   }
@@ -1738,34 +1699,21 @@ Text Domain: aiop-voice
     padding-bottom: 5.5rem;
   }
   main.home #dates {
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-    row-gap: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  main.home #dates svg {
+    position: relative;
+    order: 1;
   }
   main.home #dates .date-text {
-    grid-column: 2/8;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-    margin-bottom: -0.2em;
+    order: 2;
   }
-  main.home #dates .date-text .month {
-    grid-column: 2/6;
-    grid-row: 1/2;
-  }
-  main.home #dates .date-text .days {
-    grid-column: 1/6;
-    grid-row: 2/3;
-  }
-  main.home #dates .date-buttons {
-    grid-area: 1/8/2/end;
-    justify-self: start;
-    align-self: end;
-  }
-  main.home #dates .date-care {
-    grid-area: 2/3/3/11;
+  main.home #dates .date-locations {
+    order: 3;
   }
   main.home #about {
     padding-top: 4rem;
@@ -1937,7 +1885,7 @@ Text Domain: aiop-voice
   main.schedule {
     padding: 0 1.5rem;
   }
-  main.schedule .artists {
+  main.schedule .schedule-container {
     margin: 0;
   }
   main.schedule div.day {
@@ -1948,6 +1896,9 @@ Text Domain: aiop-voice
     max-width: 100%;
     margin-bottom: 4rem;
     width: 100%;
+  }
+  main.schedule div.day:last-child {
+    margin-bottom: 0;
   }
   main.schedule div.day#saturday, main.schedule div.day#sunday {
     margin-top: 0;
@@ -2173,37 +2124,35 @@ Text Domain: aiop-voice
     width: 100%;
     height: 100%;
   }
-  .donate-bg-ripple#donate-ripple-1 {
-    height: 50vw;
-    top: -10vw;
-  }
-  .donate-bg-ripple#donate-ripple-1 img {
-    position: absolute;
-    height: 100%;
-    left: 55vw;
-  }
   main.donate {
+    position: relative;
+    min-height: 50%;
+  }
+  main.donate .page-title {
+    position: relative;
+    z-index: 0;
+  }
+  main.donate div.payment-method {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     -moz-column-gap: 1rem;
          column-gap: 1rem;
     max-width: 100%;
-    min-height: 50%;
+    z-index: 1;
   }
-  main.donate .page-title {
-    grid-column: 1/12;
-    grid-row: 1/2;
+  main.donate div.payment-method h3 {
+    grid-column: 1/6;
   }
-  main.donate div.payment-method {
-    margin-top: 0;
-    grid-row: 2/3;
+  main.donate div.payment-method p {
+    grid-column: 7/12;
+  }
+  main.donate div.payment-method a {
+    grid-column: 7/12;
+    justify-self: end;
   }
   main.donate div.payment-method.paypal {
-    grid-column: 1/6;
-    padding-right: 2rem;
-  }
-  main.donate div.payment-method.mail {
-    grid-column: 7/12;
+    margin-top: -2rem;
   }
   main.press {
     min-height: calc(100vh - 20rem);
@@ -2345,15 +2294,15 @@ Text Domain: aiop-voice
     margin-bottom: 1.5rem;
   }
   main.about .partners .partner-container img.partner-logo {
-    grid-column: 1/3;
-    width: 80%;
+    grid-column: 1/4;
+    width: 100%;
   }
   main.about .partners .partner-container .partner {
-    grid-column: 3/13;
+    grid-column: 4/13;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 1rem;
     margin-bottom: 3rem;
   }
   main.about .partners .partner-container .partner .button {
@@ -2466,7 +2415,7 @@ Text Domain: aiop-voice
     grid-column: 1/3;
   }
   footer #footer-people {
-    grid-column: 3/6;
+    grid-column: 4/7;
   }
   footer #footer-contact {
     grid-column: 7/9;

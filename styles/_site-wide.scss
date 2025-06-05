@@ -13,14 +13,6 @@ body {
   margin: 0;
 }
 
-// #spacer {
-//   position: relative;
-//   top: 0;
-//   height: 46px;
-//   // background-color: $neon-yellow;
-//   transition: top 0.3s ease-in-out;
-// }
-
 ol,
 ul {
   list-style: none;
@@ -177,34 +169,6 @@ div.button {
     }
   }
 
-  &.primary-orange {
-    background: $primary-orange;
-    border: 1px solid $primary-orange;
-    color: $black;
-    &:hover {
-      background: $deepCoral;
-      border-color: $deepCoral;
-      &::after {
-        margin-left: 1rem;
-      }
-    }
-  }
-
-  &.deep-coral {
-    background: $deepCoral;
-    border: 1px solid $deepCoral;
-    color: $black;
-    &:hover {
-      &::after {
-        // content: url(assets/arrow-right-light.svg);
-        margin-left: 1rem;
-      }
-      background: $pink;
-      border-color: $pink;
-      // color: white;
-    }
-  }
-
   &.down-arrow {
     &::after {
       transform: rotate(90deg);
@@ -216,9 +180,31 @@ div.button {
     }
   }
 
-  &.light-coral {
-    border: 1px solid $lightCoral;
-    background: $lightCoral;
+  &.lightblue {
+    background: $lightBlue;
+    border: 1px solid $lightBlue;
+    color: $black;
+    &:hover {
+      &::after {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &.lightpurple {
+    background: $lightPurple;
+    border: 1px solid $lightPurple;
+    color: $black;
+    &:hover {
+      &::after {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &.brightblue {
+    background: $brightBlue;
+    border: 1px solid $brightBlue;
     color: $black;
 
     &:hover {
@@ -226,10 +212,25 @@ div.button {
         // content: url(assets/arrow-right-light.svg);
         margin-left: 1rem;
       }
-      border-color: $deepCoral;
-      background: $deepCoral;
+      border-color: $darkBlue;
+      // background: $darkBlue;
     }
   }
+
+  &.brightpurple {
+    border: 1px solid $brightPurple;
+    background: $brightPurple;
+    color: $lightestBlue;
+    &:after {
+      content: url(assets/arrow-right-light.svg);
+    }
+    &:hover {
+      &::after {
+        margin-left: 1rem;
+      }
+    }
+  }
+
   &.pink {
     border: 1px solid $pink;
     background: $pink;
@@ -244,6 +245,7 @@ div.button {
       background: $mustard;
     }
   }
+
   &.beige {
     border: 1px solid $beige;
     background: $beige;
@@ -258,20 +260,7 @@ div.button {
       background: $mustard;
     }
   }
-  &.bright-blue {
-    border: 1px solid $brightBlue;
-    background: $brightBlue;
-    color: $black;
 
-    &:hover {
-      &::after {
-        // content: url(assets/arrow-right-light.svg);
-        margin-left: 1rem;
-      }
-      border-color: $darkBlue;
-      background: $darkBlue;
-    }
-  }
   &.mustard {
     border: 1px solid $mustard;
     background: $mustard;
@@ -300,10 +289,21 @@ div.button {
       opacity: 0.8;
     }
   }
+
+  &.black {
+    color: $black;
+    &::after {
+      content: url(assets/arrow-right-dark.svg);
+    }
+  }
 }
 
 div.button p {
   display: inline-block;
+}
+
+.display-none {
+  display: none;
 }
 
 // Flex classes
@@ -375,4 +375,22 @@ div.button p {
     pointer-events: all;
     display: block;
   }
+}
+
+// Texture on all pages mobile style
+#fullpage-texture {
+  position: relative;
+  &::before {
+    content: "";
+    mix-blend-mode: color-dodge;
+    position: fixed;
+    background: url(assets/Overlay_Mobile.jpg);
+    background-size: cover;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+  }
+  z-index: 11;
+  pointer-events: none;
 }

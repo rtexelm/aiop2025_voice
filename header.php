@@ -32,9 +32,6 @@
                 <img src="<?php bloginfo('template_url'); ?>/assets/AiOP_nav-white.png" id="aiopLogo" alt="AIOP"
                     aria-hidden="true">
             </a>
-            <p class="disclaimer">
-                Full website coming soon!
-            </p>
             <div class="flex-container just-flex-end align-items-center">
                 <div class="menuVisible">
                     <?php
@@ -47,6 +44,9 @@
                 <a title="full menu" href="#menuFull" id="menuToggleAnchor">
                     <img id="menuToggle" src="<?php bloginfo('template_url'); ?>/assets/hamburger-icon-24.svg"
                         alt="view menu" aria-hidden="true">
+                    <img id="menuToggleDark" class="display-none" src="
+                        <?php bloginfo('template_url'); ?>/assets/hamburger-icon-24-dark.svg" alt="view menu"
+                        aria-hidden="true">
                 </a>
             </div>
         </section>

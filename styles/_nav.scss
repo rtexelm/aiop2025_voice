@@ -27,6 +27,7 @@ nav.top {
   .nav-bar-flex {
     display: flex;
     flex-flow: row nowrap;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -38,12 +39,6 @@ nav.top {
       width: 5rem;
       z-index: 11;
     }
-  }
-
-  .disclaimer {
-    margin-bottom: 0;
-    font-variation-settings: "wght" 500;
-    color: $brightBlue;
   }
 
   a#menuToggleAnchor {
@@ -61,16 +56,13 @@ nav.top {
     padding-top: 1rem;
     z-index: 12;
     position: fixed;
-    // top: 0;
     left: 0;
-    // left: 140vw;
     width: 100%;
     height: 100dvh;
     max-height: 100%;
     display: flex;
     flex-direction: column;
     transition: transform 0.66s ease, opacity 0.3s ease;
-    // transition: all 0.66s;
     transform: translateX(140vw); /* Off-screen initially */
     opacity: 0;
     pointer-events: none;
@@ -83,15 +75,15 @@ nav.top {
       content: "";
       z-index: -1;
       position: absolute;
-      background: $pink;
-      top: -10%;
+      background: $lightBlue;
+      top: -72px;
       right: 0px;
       bottom: 0px;
       left: 0px;
     }
 
     a {
-      color: $black;
+      color: $darkBlue;
       text-decoration: none;
     }
 
@@ -100,15 +92,13 @@ nav.top {
       padding: 0px;
       &#menu-full-navigation {
         li {
-          // position: relative;
           display: block;
           list-style: none;
           font-size: 1.8rem;
-          border-top: 1px solid $black;
+          border-top: 1px solid $darkBlue;
           &:hover {
-            // background-color: $deepCoral;
             a {
-              color: $lightBlue;
+              color: $brightBlue;
             }
           }
           a {
@@ -119,7 +109,7 @@ nav.top {
             font-family: $primary-type;
             font-weight: 400;
             &:focus {
-              background-color: $deepCoral;
+              background-color: $lightestBlue;
             }
           }
         }

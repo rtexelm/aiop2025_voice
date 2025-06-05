@@ -34,6 +34,7 @@ $artistQuery = new WP_Query($artistsArgs);
 $last_letter = ' ';
 
 ?>
+<div id="fullpage-texture"></div>
 <main class="site-content artists artist-listing" id="main-content">
     <h1 class="hidden">Artists</h1>
 
@@ -72,7 +73,8 @@ $last_letter = ' ';
                     <?php echo $project_title ?>
                 </h4>
             </div>
-            <a class="button pink" title="view <?php echo $displayName ?>" href="<?php echo the_permalink(); ?>">View
+            <a class="button lightpurple" title="view <?php echo $displayName ?>"
+                href="<?php echo the_permalink(); ?>">View
                 project</a>
 
             <!-- Superimpose the thumbnail over a circular background -->

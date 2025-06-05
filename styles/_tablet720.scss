@@ -37,6 +37,24 @@
     padding: 0.2em 0.5em 0.1em 0.8em;
   }
 
+  // Texture on all pages desktop style
+  #fullpage-texture {
+    position: relative;
+    &::before {
+      content: "";
+      mix-blend-mode: color-dodge;
+      position: fixed;
+      background: url(assets/Overlay-desktop-New.jpg);
+      background-size: cover;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+    }
+    z-index: 11;
+    pointer-events: none;
+  }
+
   // Nav header ###########################################################
 
   nav.top {
@@ -92,7 +110,7 @@
   // Front Page #########################################
 
   main.home {
-    .header {
+    .heading {
       border-bottom-left-radius: 100px;
       border-bottom-right-radius: 100px;
 
@@ -185,32 +203,30 @@
     }
 
     #dates {
-      column-gap: 1rem;
-      row-gap: 2rem;
+      // column-gap: 1rem;
+      // row-gap: 2rem;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      svg {
+        position: relative;
+        order: 1;
+      }
       .date-text {
-        grid-column: 2/8;
-        grid-row: 1/2;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        column-gap: 1rem;
-        margin-bottom: -0.2em;
-
-        .month {
-          grid-column: 2/6;
-          grid-row: 1/2;
-        }
-        .days {
-          grid-column: 1/6;
-          grid-row: 2/3;
-        }
+        order: 2;
+        // grid-column: 2/8;
+        // grid-row: 1/2;
+        // grid-template-columns: repeat(6, 1fr);
+        // column-gap: 1rem;
+        // margin-bottom: -0.2em;
       }
-      .date-buttons {
-        grid-area: 1/8/ 2 / end;
-        justify-self: start;
-        align-self: end;
-      }
-      .date-care {
-        grid-area: 2/3/ 3/11;
+      .date-locations {
+        order: 3;
+        // grid-area: 1/8/ 2 / end;
+        // justify-self: start;
+        // align-self: end;
       }
     }
 
@@ -383,13 +399,16 @@
   // }
   main.schedule {
     padding: 0 1.5rem;
-    .artists {
+    .schedule-container {
       margin: 0;
     }
 
     div.day {
       @include twelve-col-grid;
       margin-bottom: 4rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
       width: 100%;
       &#saturday,
       &#sunday {
@@ -641,33 +660,29 @@
 
   // Donate page ############################################################
 
-  .donate-bg-ripple {
-    &#donate-ripple-1 {
-      height: 50vw;
-      top: -10vw;
-      img {
-        position: absolute;
-        height: 100%;
-        left: 55vw;
-      }
-    }
-  }
   main.donate {
-    @include twelve-col-grid;
+    position: relative;
     min-height: 50%;
     .page-title {
-      grid-column: 1/12;
-      grid-row: 1/2;
+      position: relative;
+      z-index: 0;
     }
     div.payment-method {
-      margin-top: 0;
-      grid-row: 2/3;
-      &.paypal {
+      position: relative;
+      @include twelve-col-grid;
+      z-index: 1;
+      h3 {
         grid-column: 1/6;
-        padding-right: 2rem;
       }
-      &.mail {
+      p {
         grid-column: 7/12;
+      }
+      a {
+        grid-column: 7/12;
+        justify-self: end;
+      }
+      &.paypal {
+        margin-top: -2rem;
       }
     }
   }
@@ -800,15 +815,15 @@
         margin-bottom: 1.5rem;
 
         img.partner-logo {
-          grid-column: 1/3;
-          width: 80%;
+          grid-column: 1/4;
+          width: 100%;
         }
         .partner {
-          grid-column: 3/13;
+          grid-column: 4/13;
           display: flex;
           flex-flow: row nowrap;
           justify-content: space-between;
-          gap: 5rem;
+          gap: 1rem;
           margin-bottom: 3rem;
           .button {
             margin-top: 0;
@@ -925,7 +940,7 @@
       grid-column: 1/3;
     }
     #footer-people {
-      grid-column: 3/6;
+      grid-column: 4/7;
     }
     #footer-contact {
       grid-column: 7/9;

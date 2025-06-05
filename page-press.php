@@ -34,6 +34,7 @@ $pressQuery = new WP_Query($pressArgs);
 
 <div id="press-bg"></div>
 <main class="site-content press press-listing">
+    <div id="fullpage-texture"></div>
 
     <section class="press-posts">
         <h1>Press</h1>

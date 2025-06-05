@@ -16,20 +16,19 @@ get_header();
 ?>
 <?php
 
-$highlight = get_field('about_cs_highlight');
-$statement = get_field('about_cs_statement');
-$mission = get_field('about_aiop_mission');
-$history = get_field('about_aiop_history');
-// $bureau = get_field('about_bureau');
-// $center = get_field('about_the_center');
-// $pollinate = get_field('about_pollinate');
-$dedication = get_field('about_dedication');
-$thanks = get_field('about_thanks');
-$volunteers = get_field('about_volunteers');
+$highlight  =   get_field('about_cs_highlight');
+$statement  =   get_field('about_cs_statement');
+$mission    =   get_field('about_aiop_mission');
+$history    =   get_field('about_aiop_history');
+$dedication =   get_field('about_dedication');
+$thanks     =   get_field('about_thanks');
+$volunteers =   get_field('about_volunteers');
 
 ?>
 
 <main class="site-content about" id="main-content">
+    <div id="fullpage-texture"></div>
+
     <div id="about-background">
 
         <h1 class="hidden">ABOUT</h1>
@@ -222,7 +221,7 @@ $volunteers = get_field('about_volunteers');
 
             </section>
             <div id="blog-button">
-                <a target="_blank" href="https://artinoddplaces.org/blog/" class="button deep-coral">AiOP Blog</a>
+                <a target="_blank" href="https://artinoddplaces.org/blog/" class="button brightblue">AiOP Blog</a>
             </div>
         </section>
     </div>
@@ -231,37 +230,43 @@ $volunteers = get_field('about_volunteers');
 
         <h2>Partners</h2>
 
+        <?php
+        wp_reset_query();
+        ?>
+        <?php
+        $partnerArgs = array(
+            'post_type' => 'partner',
+            'orderby' => 'ID',
+            'order'    => 'ASC',
+            'posts_per_page' => -1,
+        );
+
+        $partnerQuery = new WP_Query($partnerArgs);
+        ?>
+        <?php if ($partnerQuery->have_posts()): ?>
+        <?php while ($partnerQuery->have_posts()): $partnerQuery->the_post(); ?>
+        <?php
+                if (function_exists('get_field')):
+                    $partner_image          = get_field('partner_image');
+                    $partner_description    = get_field('partner_description');
+                    $partner_link           = get_field('partner_link');
+                ?>
+
         <div class="partner-container">
 
-            <!-- <img src="<?php bloginfo('template_url'); ?>/assets/about/BGSQD-168w.png"
-                alt="Bureau of General Services – Queer Division" class="partner-logo" id="partner-logo-bureau" />
+            <img src="<?php echo esc_url($partner_image['url']); ?>" class="partner-logo"
+                alt="\<?php echo esc_attr($partner_image['alt']); ?>" />
 
-            <div class="partner bureau">
-                <p class="partner-text p2"><?php echo $bureau; ?></p>
-                <a target="_blank" href="https://bookshop.org/shop/bgsqd" class="button deep-coral">bgsqd.com</a>
-            </div> -->
+            <div class="partner">
+                <p class="partner-text p2"><?php echo $partner_description; ?></p>
+                <a target="_blank" href=<?php echo esc_url($partner_link['url']); ?>
+                    class="button brightpurple"><?php echo esc_attr($partner_link['title']); ?></a>
+            </div>
         </div>
-        <div class="partner-container">
-
-            <!-- <img src="<?php bloginfo('template_url'); ?>/assets/about/pollinate252w.png" alt="Pollinate"
-                class="partner-logo" id="partner-logo-pollinate" />
-
-            <div class="partner pollinate">
-                <p class="partner-text p2"><?php echo $pollinate; ?></p>
-                <a target="_blank" href="https://www.pollinate.co/" class="button deep-coral">pollinate.co</a>
-            </div> -->
-        </div>
-        <div class="partner-container">
-
-            <!-- <img src="<?php bloginfo('template_url'); ?>/assets/about/The Center_White.PNG" alt="The Center"
-                class="partner-logo" id="partner-logo-center" />
-
-            <div class="partner the-center">
-                <p class="partner-text p2"><?php echo $center; ?></p>
-                <a target="_blank" href="https://gaycenter.org/" class="button deep-coral">gaycenter.org</a>
-            </div> -->
-        </div>
-
+        <?php endif ?>
+        <?php endwhile ?>
+        <?php wp_reset_postdata(); ?>
+        <?php endif ?>
     </section>
 
     <section class="support">
@@ -280,6 +285,6 @@ $volunteers = get_field('about_volunteers');
         </div>
     </section>
 
-</main>
+</main><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -111,7 +111,18 @@ main.about {
   .partners {
     background: linear-gradient($lightBlue 0%, $brightBlue 100%);
     position: relative;
-    padding: 4rem 1.5rem;
+    padding: 2rem 1.5rem;
+    a,
+    p,
+    h2 {
+      color: $darkBlue;
+    }
+
+    a {
+      &:after {
+        content: url(assets/arrow-right-dark.svg);
+      }
+    }
 
     &::before {
       content: "";
@@ -134,10 +145,15 @@ main.about {
     // }
 
     h2 {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     .partner-container {
-      border-top: 1px solid $beige;
+      border-top: 1px solid $darkBlue;
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: 1rem 0;
+      }
       margin-bottom: 3rem;
       .partner {
         &:last-child {

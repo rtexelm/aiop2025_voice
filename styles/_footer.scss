@@ -3,7 +3,6 @@
 footer {
   box-sizing: border-box;
   background: $deepPurple;
-  color: $white;
   z-index: 10;
   padding: 3rem 1.5rem;
   p,
@@ -11,6 +10,10 @@ footer {
     margin: 0 0 0.5rem 0;
     font-weight: 500;
     font-family: $primary-type;
+  }
+
+  svg {
+    padding: 1rem 0;
   }
 
   a {

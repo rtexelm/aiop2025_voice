@@ -197,7 +197,6 @@
 		</footer>
 
 		<div class="menu-overlay" id="menuOverlay"></div>
-		<!-- <script src="scripts/main.js" type="text/javascript" canvas="header"></script> -->
 
 		</body>
 
