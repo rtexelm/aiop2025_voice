@@ -912,9 +912,6 @@ main.about .partners p,
 main.about .partners h2 {
   color: #0b0050;
 }
-main.about .partners a:after {
-  content: url(assets/arrow-right-dark.svg);
-}
 main.about .partners::before {
   content: "";
   z-index: -1;
@@ -936,7 +933,7 @@ main.about .partners .partner-container {
 main.about .partners .partner-container img {
   max-width: 100%;
   height: auto;
-  padding: 1rem 0;
+  padding: 0 0;
 }
 main.about .partners .partner-container .partner:last-child {
   margin-bottom: 0;
@@ -947,6 +944,7 @@ main.about .partners .partner-logo {
 }
 main.about .partners .button {
   margin-top: 1rem;
+  color: #d2eff5;
 }
 main.about .support {
   background: linear-gradient(#0a008e 0%, #7d30be 100%);
@@ -2118,29 +2116,22 @@ Text Domain: aiop-voice
     display: none;
   }
   main.artist-listing section.artists .artist-container .list-thumb {
-    width: 200px; /* Adjust as necessary */
-    height: 200px; /* Adjust as necessary */
-    border-radius: 50%; /* Make the background circular */
     overflow: hidden; /* Ensure the image fits within the circle */
-    background-size: cover;
-    background-position: center;
     display: flex;
+    border-radius: 46px; /* Make the background circular */
     justify-content: center;
     align-items: center;
-    grid-column: 1/3;
+    grid-column: 10/13;
     position: absolute;
-    z-index: -1;
     opacity: 0;
     transform: scale(0); /* Initially small */
     top: -45;
     transition: all ease-out 0.3s;
   }
   main.artist-listing section.artists .artist-container .list-thumb-image {
-    width: 80%;
-    height: 80%;
-    border-radius: 50%; /* Circular mask for the thumbnail */
-    -o-object-fit: cover;
-       object-fit: cover; /* Ensures the image covers the whole div */
+    width: 100%;
+    height: auto;
+    border-radius: 46px; /* Make the background circular */
   }
   main.artist-listing section.artists .artist-container:hover .list-thumb {
     transform: scale(1); /* Initially small */
@@ -2502,7 +2493,7 @@ Text Domain: aiop-voice
   }
   nav.top {
     padding: 0 3rem;
-    width: calc(100% - 6rem);
+    width: calc(100% - 7rem);
   }
   main.home .header #title {
     padding-left: 3rem;
@@ -2564,13 +2555,6 @@ Text Domain: aiop-voice
   }
   main.artist-single {
     padding: 0 3rem;
-  }
-  main.artist-single section.project-img {
-    right: 3rem;
-    width: 90vh;
-    height: 90vh;
-    max-width: 800px;
-    max-height: 800px;
   }
   main.artist-single .project-info-grid::before {
     left: -3rem;

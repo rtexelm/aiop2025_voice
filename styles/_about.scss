@@ -118,12 +118,6 @@ main.about {
       color: $darkBlue;
     }
 
-    a {
-      &:after {
-        content: url(assets/arrow-right-dark.svg);
-      }
-    }
-
     &::before {
       content: "";
 
@@ -152,7 +146,7 @@ main.about {
       img {
         max-width: 100%;
         height: auto;
-        padding: 1rem 0;
+        padding: 0 0;
       }
       margin-bottom: 3rem;
       .partner {
@@ -168,6 +162,7 @@ main.about {
     }
     .button {
       margin-top: 1rem;
+      color: $lightestBlue;
     }
   }
 

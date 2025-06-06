@@ -99,6 +99,8 @@ foreach ($all_posts->posts as $key => $value) {
         // $sun_final2 = scheduleFormat($sunday_start2, $sunday_end2);
 
         ?>
+<div id="fullpage-texture"></div>
+
 <main class="artist-single" id="main-content">
 
 
@@ -219,7 +221,8 @@ foreach ($all_posts->posts as $key => $value) {
 
             </div>
 
-            <section class="bios p2">
+            <section class="bios">
+
                 <?php
 
                         if ($artist_1_bio) {
