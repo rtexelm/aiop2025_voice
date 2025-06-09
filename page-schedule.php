@@ -226,7 +226,7 @@ $sunday     = get_field('sunday_schedule');
             </div>
 
             <div class="day-header">
-                <h3>Friday</h3>
+                <h3 class="bold">Friday</h3>
             </div>
 
             <div class="project-schedule">
@@ -251,7 +251,7 @@ $sunday     = get_field('sunday_schedule');
             </div>
 
             <article class="day-header">
-                <h3>Saturday</h3>
+                <h3 class="bold">Saturday</h3>
             </article>
 
             <div class="project-schedule">
@@ -273,7 +273,7 @@ $sunday     = get_field('sunday_schedule');
             </div>
 
             <article class="day-header">
-                <h3>Sunday</h3>
+                <h3 class="bold">Sunday</h3>
             </article>
 
 

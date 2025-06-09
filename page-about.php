@@ -33,13 +33,10 @@ $volunteers =   get_field('about_volunteers');
 
         <h1 class="hidden">ABOUT</h1>
 
-        <div class="positioner">
-            <!-- <div class="about-bg-ripple" id="about-ripple-1"> -->
-            <!-- <img src="<?php bloginfo('template_url'); ?>/assets/Ripple_1200px_01.png" /> -->
-            <!-- </div> -->
-        </div>
-
         <section class="voice">
+            <!-- <div class="positioner">
+                <img class="cloud" id="cloud-01" src="<?php bloginfo('template_url'); ?>/assets/Cloud-01.png" />
+            </div> -->
             <div class="title">
                 <svg width="866" height="200" viewBox="0 0 866 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3" clip-path="url(#clip0_524_2437)">
@@ -75,6 +72,9 @@ $volunteers =   get_field('about_volunteers');
                     <?php echo $statement ?>
                 </div>
             </div>
+            <!-- <div class="positioner">
+                <img class="cloud" id="cloud-02" src="<?php bloginfo('template_url'); ?>/assets/Cloud-02.png" />
+            </div> -->
         </section>
 
         <section class="festival">

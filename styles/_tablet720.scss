@@ -391,12 +391,20 @@
 
   // Schedule Page ##################################################
 
-  // #schedule-background {
-  // }
   main.schedule {
-    padding: 0 1.5rem;
+    .title {
+      padding-bottom: 0;
+      display: flex;
+      justify-content: center;
+      svg {
+        width: 80%;
+        height: auto;
+      }
+    }
+
     .schedule-container {
       margin: 0;
+      margin-top: -2rem;
     }
 
     div.day {
@@ -404,6 +412,7 @@
       margin-bottom: 4rem;
       &:last-child {
         margin-bottom: 0;
+        padding-bottom: 5rem;
       }
       width: 100%;
       &#saturday,
@@ -414,6 +423,7 @@
       .day-header {
         grid-column: 1/5;
         grid-row: 1/2;
+        align-self: flex-end;
       }
 
       .day-nav {
@@ -436,7 +446,7 @@
       }
 
       .project-schedule {
-        grid-column: 5/13;
+        grid-column: 1/13;
       }
 
       .artist-container {
@@ -613,7 +623,7 @@
         .artist-copy {
           position: relative;
           grid-column: 3/11;
-          border-top: 1px solid $mustard;
+          border-top: 1px solid $brightBlue;
           padding-top: 0.5rem;
         }
         a.button {
@@ -668,6 +678,13 @@
     .page-title {
       position: relative;
       z-index: 0;
+      padding-bottom: 0;
+      display: flex;
+      justify-content: center;
+      svg {
+        max-width: 70%;
+        height: auto;
+      }
     }
     div.payment-method {
       position: relative;
@@ -693,7 +710,18 @@
 
   main.press {
     min-height: calc(100vh - 20rem);
+    .title {
+      position: relative;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      svg {
+        max-width: 70%;
+        height: auto;
+      }
+    }
     section.press-posts {
+      margin-top: -2rem;
       .press-container {
         margin: 1rem 0;
         @include twelve-col-grid;
