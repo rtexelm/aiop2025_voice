@@ -190,10 +190,10 @@ jQuery(document).ready(function ($) {
 
   // Define the elements and their respective speed coefficients
   const parallaxElements = [
-    // { id: "#about-ripple-1", speed: -0.2 },
-    // { id: "#about-ripple-2", speed: 0.3 },
-    // { id: "#about-ripple-3", speed: 0.92 },
-    // { id: "#about-ripple-4", speed: 0.5 },
+    { id: "#cloud-01", speed: -0.2 },
+    { id: "#cloud-02", speed: 0.3 },
+    { id: "#cloud-03", speed: 0.15 },
+    { id: "#cloud-04", speed: -0.09 },
     // { id: "#about-ripple-5", speed: 0.09 },
     // { id: "#about-ripple-6", speed: -0.1 },
     // { id: "#about-ripple-7", speed: 0.07 },

@@ -102,7 +102,7 @@ get_header();
             <span class="state">California</span>
 
         </h2>
-        <div class="date-locations h3 semi-bold">
+        <div class="date-locations h3">
             <ul>
                 <li>
                     Friday July 25</br>
@@ -182,11 +182,11 @@ get_header();
             </div>
             <div class="artists-list">
                 <ul class="p">
+                    <li>Beck+Col with Tetiana Sklyarova and Kayla Aguila</li>
                     <li>Brian Black & Zane Alexander S.B.</li>
                     <li>Chelsea Boxwell</li>
                     <li>Oleksandr Brzhezytskyi</li>
-                    <li>Jinseok Choi</li>
-                    <li>Beck+Col</li>
+                    <li>jinseok choi</li>
                     <li>Oscar Corona</li>
                     <li>Issaiha Cunningham</li>
                     <li>Andrea Derujinsky</li>
@@ -198,13 +198,13 @@ get_header();
                     <li>Asuka Hisa</li>
                     <li>Marcus Kuiland-Nazario</li>
                     <li>Ibuki Kuramochi</li>
-                    <li>Mathilda LaZelle</li>
+                    <li>Mathilda LaZelle Moore</li>
                     <li>Olivia Leiter</li>
-                    <li>Curt Lemieux & Marley Vanpeebles</li>
+                    <li>Curt Lemieux & Marley Van Peebles</li>
                     <li>Simon Leung</li>
-                    <li>Association of Hysteric Curators: Maya Mackrandilal, Mary Anna Pomonis, Monet Clark,
-                        Marjan Vayghan, & Taryn Lee</li>
-                    <li>Elana Mann & Chohi Kim</li>
+                    <li>Association of Hysteric Curators: Maya Mackrandilal, Mary Anna Pomonis, Monet Clark, Marjan
+                        Vayghan, Michiko Yao & Taryn Lee</li>
+                    <li>Elana Mann & Sharon Chohi Kim</li>
                     <li>Kacie Lyn Martinez</li>
                     <li>Jeff McMahon & William Roper</li>
                     <li>Cade Moga</li>
@@ -216,7 +216,7 @@ get_header();
                     <li>Renée Reizman</li>
                     <li>christy roberts berkowitz & Abbe Land</li>
                     <li>Saun Santipreecha & Luc Trahand</li>
-                    <li>Constance Strickland</li>
+                    <li>Constance Jaquay Strickland</li>
                     <li>Wes Weisbaum & Parker Wanamaker</li>
                     <li>David Yashin</li>
             </div>

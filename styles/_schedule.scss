@@ -37,6 +37,9 @@ main.schedule {
     .project-schedule {
       border-top: 1px solid $brightBlue;
       padding-top: 1rem;
+      .fest-header {
+        font-variation-settings: "wght" 600;
+      }
     }
 
     // .pp-container {

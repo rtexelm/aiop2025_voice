@@ -34,9 +34,9 @@ $volunteers =   get_field('about_volunteers');
         <h1 class="hidden">ABOUT</h1>
 
         <section class="voice">
-            <!-- <div class="positioner">
+            <div class="positioner">
                 <img class="cloud" id="cloud-01" src="<?php bloginfo('template_url'); ?>/assets/Cloud-01.png" />
-            </div> -->
+            </div>
             <div class="title">
                 <svg width="866" height="200" viewBox="0 0 866 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3" clip-path="url(#clip0_524_2437)">
@@ -72,9 +72,9 @@ $volunteers =   get_field('about_volunteers');
                     <?php echo $statement ?>
                 </div>
             </div>
-            <!-- <div class="positioner">
+            <div class="positioner">
                 <img class="cloud" id="cloud-02" src="<?php bloginfo('template_url'); ?>/assets/Cloud-02.png" />
-            </div> -->
+            </div>
         </section>
 
         <section class="festival">
@@ -84,6 +84,7 @@ $volunteers =   get_field('about_volunteers');
                     <?php echo $mission ?>
                 </p>
             </div>
+            <div class="festival-shape"></div>
             <div class="history">
                 <h2>History</h2>
                 <p>
@@ -224,6 +225,41 @@ $volunteers =   get_field('about_volunteers');
                 <a target="_blank" href="https://artinoddplaces.org/blog/" class="button brightblue">AiOP Blog</a>
             </div>
         </section>
+        <div class="positioner">
+            <img class="cloud" id="cloud-03" src="<?php bloginfo('template_url'); ?>/assets/Cloud-03.png" />
+        </div>
+        <div class="positioner">
+            <img class="cloud" id="cloud-04" src="<?php bloginfo('template_url'); ?>/assets/Cloud-04.png" />
+        </div>
+        <div class="city-illustration">
+            <svg width="755" height="337" viewBox="0 0 755 337" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="126" width="284" height="211" fill="url(#paint0_linear_524_2915)" />
+                <g style="mix-blend-mode:overlay" opacity="0.8">
+                    <path d="M142 24C142 10.7452 152.745 0 166 0H402C415.255 0 426 10.7452 426 24V337H142V24Z"
+                        fill="url(#paint1_linear_524_2915)" />
+                </g>
+                <path d="M455 276C455 193.157 522.157 126 605 126C687.843 126 755 193.157 755 276V337H455V276Z"
+                    fill="url(#paint2_linear_524_2915)" />
+                <defs>
+                    <linearGradient id="paint0_linear_524_2915" x1="142" y1="337" x2="142" y2="126"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7D30BE" />
+                        <stop offset="1" stop-color="#0FA5DC" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_524_2915" x1="142" y1="168.5" x2="426" y2="168.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0FA5DC" />
+                        <stop offset="1" stop-color="#A9EFFF" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_524_2915" x1="587.5" y1="347" x2="587.5" y2="99"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7D30BE" />
+                        <stop offset="1" stop-color="#A9EFFF" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
     </div>
 
     <section class="partners">
@@ -269,21 +305,50 @@ $volunteers =   get_field('about_volunteers');
         <?php endif ?>
     </section>
 
-    <section class="support">
+    <div class="support-background">
+        <section class="support">
 
-        <h2>Support</h2>
-        <div class="dedication p2">
-            <p class="p1"><?php echo $dedication; ?></p>
+            <h2>Support</h2>
+            <div class="dedication p2">
+                <p class="p1"><?php echo $dedication; ?></p>
+            </div>
+            <div class="thanks p2">
+                <h3>Thanks</h3>
+                <p><?php echo $thanks; ?></p>
+            </div>
+            <div class="volunteers p2">
+                <h3>Volunteers</h3>
+                <p><?php echo $volunteers; ?></p>
+            </div>
+        </section>
+        <div class="desert-illustration">
+            <svg width="1016" height="337" viewBox="0 0 1016 337" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="732" y="126" width="284" height="211" fill="url(#paint0_linear_524_2923)" />
+                <path d="M0 329C0 246.157 67.1573 179 150 179C232.843 179 300 246.157 300 329V337H0V329Z"
+                    fill="url(#paint1_linear_524_2923)" />
+                <path opacity="0.8"
+                    d="M277 0C299.091 0 317 17.9086 317 40V164H342V93C342 76.4315 355.431 63 372 63C388.569 63 402 76.4315 402 93V194C402 210.569 388.569 224 372 224H317V337H237V287H185L184.226 286.99C168.015 286.579 155 273.31 155 257V156C155 139.431 168.431 126 185 126C201.569 126 215 139.431 215 156V227H237V40C237 17.9086 254.909 0 277 0Z"
+                    fill="url(#paint2_linear_524_2923)" />
+                <defs>
+                    <linearGradient id="paint0_linear_524_2923" x1="826" y1="466" x2="826" y2="137.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CD44E8" />
+                        <stop offset="1" stop-color="#0FA5DC" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_524_2923" x1="177" y1="179" x2="177" y2="347.109"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D4F2F9" />
+                        <stop offset="1" stop-color="#CD44E8" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_524_2923" x1="233.5" y1="11" x2="233.5" y2="337"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CD44E8" />
+                        <stop offset="1" stop-color="#0FA5DC" />
+                    </linearGradient>
+                </defs>
+            </svg>
         </div>
-        <div class="thanks p2">
-            <h3>Thanks</h3>
-            <p><?php echo $thanks; ?></p>
-        </div>
-        <div class="volunteers p2">
-            <h3>Volunteers</h3>
-            <p><?php echo $volunteers; ?></p>
-        </div>
-    </section>
+    </div>
 
 </main><!-- #primary -->
 

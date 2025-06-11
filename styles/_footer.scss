@@ -12,8 +12,10 @@ footer {
     font-family: $primary-type;
   }
 
-  svg {
-    padding: 1rem 0;
+  #footer-festival {
+    svg {
+      padding: 1rem 0;
+    }
   }
 
   a {
@@ -24,9 +26,9 @@ footer {
       fill: white;
     }
     &:hover {
-      color: $black;
+      color: $brightBlue;
       svg path {
-        fill: $black;
+        fill: $brightBlue;
       }
     }
     img {

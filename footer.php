@@ -146,10 +146,10 @@
 		        </svg>
 		    </div>
 		    <div class="footer-col" id="footer-people">
-		        <p><a href="http://irrationalexhibits.com/#1">Deborah Oliver</a>, </br>
+		        <p><a href="http://irrationalexhibits.com/#1" target="_blank">Deborah Oliver</a>, </br>
 		            Curator
 		        </p>
-		        <p><a href="https://edwoodham.com/bio/">Ed Woodham,</a></br>
+		        <p><a href="https://edwoodham.com/bio/" target="_blank">Ed Woodham,</a></br>
 		            Founder & Director
 		        </p>
 		        <p><a href="https://lauriewaxman.com" target="_blank">Laurie Waxman,</a></br>
