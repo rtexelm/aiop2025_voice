@@ -770,11 +770,24 @@
       @include twelve-col-grid;
       grid-row-gap: 5rem;
       .mission {
+        z-index: 1;
         margin-right: 2rem;
         grid-column: 2/9;
         grid-row: 1/2;
       }
+      .festival-shape {
+        width: 50vw;
+        height: 42vh;
+        position: absolute;
+        top: 36%;
+        left: 42%;
+        z-index: 0;
+        opacity: 60%;
+        background: linear-gradient(92deg, $lightPurple, $brightPurple 100%);
+        mask: radial-gradient(32px at 32px 32px, #0000 98%, #000) -32px -32px;
+      }
       .history {
+        z-index: 1;
         grid-column: 5/12;
         grid-row: 2/3;
         margin: 0;

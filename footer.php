@@ -2,7 +2,11 @@
 
 		    <div class="footer-col" id="footer-festival">
 		        <p>July 25&ndash;27, 2025</p>
-		        <p>Presented by The City of West Hollywood</p>
+		        <p>Presented by
+		            <a href="https://www.weho.org/" targer="_blank">
+		                The City of West Hollywood
+		            </a>
+		        </p>
 		        <svg class="logo" width="100" height="93" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg">
 		            <g clip-path="url(#clip0_212_1204)">
 		                <path d="M100 0H0V93H100V0Z" fill="white" />
@@ -164,7 +168,7 @@
 		    </div>
 		    <div class="footer-col" id="footer-contact">
 		        <p>Contact</br>
-		            <a href="mailto:artinodd@gmail.com" target="_blank">artinodd@gmail.com</a>
+		            <a href="mailto:aiopnyc@gmail.com" target="_blank">aiopnyc@gmail.com</a>
 		        </p>
 		        <!-- <p>Want to help out?</br>
 		            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfb5jew752cHdCaXX_1nUN-10t-J81IOpejrz80JqI-Xjq3uQ/viewform"
