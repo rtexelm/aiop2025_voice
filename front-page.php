@@ -217,7 +217,7 @@ get_header();
                     <li>christy roberts berkowitz & Abbe Land</li>
                     <li>Saun Santipreecha & Luc Trahand</li>
                     <li>Constance Jaquay Strickland</li>
-                    <li>Wes Weisbaum & Parker Wanamaker</li>
+                    <li>Wes Weisbaum</li>
                     <li>David Yashin</li>
             </div>
         </div>

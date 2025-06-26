@@ -341,17 +341,19 @@
     }
 
     .project-img {
-      margin: 6rem 1.5rem 0 1.5rem;
-      position: fixed;
-      width: 50vw;
+      align-self: start;
+      justify-self: center;
+      grid-column: 1/8;
+      margin: -8rem 1.5rem 0 1.5rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      position: sticky;
+      width: auto;
       height: auto;
-      max-width: 600px;
-      max-height: 600px;
-      top: 5rem;
+      top: 3rem;
     }
 
     div.project-info-grid {
-      top: 0px;
       grid-column: 8/13;
       margin-top: -8rem;
       .day {

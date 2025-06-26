@@ -1121,13 +1121,11 @@ main.artist-single .page-title svg {
   height: auto;
 }
 main.artist-single .project-img {
-  z-index: 10;
-  margin-top: -4rem;
+  margin-top: -3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: calc(100vw - 3rem);
-  height: calc(100vw - 3rem);
 }
 main.artist-single .project-img div.image-mask {
   border-radius: 46px;
@@ -1819,16 +1817,18 @@ Text Domain: aiop-voice
     height: auto;
   }
   main.artist-single .project-img {
-    margin: 6rem 1.5rem 0 1.5rem;
-    position: fixed;
-    width: 50vw;
+    align-self: start;
+    justify-self: center;
+    grid-column: 1/8;
+    margin: -8rem 1.5rem 0 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    position: sticky;
+    width: auto;
     height: auto;
-    max-width: 600px;
-    max-height: 600px;
-    top: 5rem;
+    top: 3rem;
   }
   main.artist-single div.project-info-grid {
-    top: 0px;
     grid-column: 8/13;
     margin-top: -8rem;
   }
@@ -2505,7 +2505,8 @@ Text Domain: aiop-voice
     min-height: 60%;
   }
   main.artist-single {
-    padding: 0 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   main.artist-single .project-info-grid::before {
     left: -3rem;
