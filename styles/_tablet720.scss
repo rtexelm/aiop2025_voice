@@ -346,11 +346,12 @@
       grid-column: 1/8;
       margin: -8rem 1.5rem 0 1.5rem;
       padding-top: 3rem;
-      padding-bottom: 2rem;
+      padding-bottom: 6rem;
       position: sticky;
       width: auto;
       height: auto;
       top: 3rem;
+      z-index: 11;
     }
 
     div.project-info-grid {
@@ -379,12 +380,16 @@
           padding: 0 1rem 0 0;
         }
       }
+      .info-area {
+        margin-bottom: 0;
+      }
     }
   }
 
   // Schedule Page ##################################################
 
   main.schedule {
+    padding-bottom: 0;
     .title {
       padding-bottom: 0;
       display: flex;
@@ -514,40 +519,17 @@
         gap: 1rem;
       }
     }
-    .schedule-bg-element {
-      z-index: -10;
-      width: calc(100% + 3rem);
-      margin-left: -1.5rem;
-      &#schedule-bg-element1 {
-        height: 53vw;
-        img {
-          right: -16vw;
-        }
-      }
-      &#schedule-bg-element2 {
-        height: 24vw;
-        img {
-          left: 10%;
-        }
-      }
-      &#schedule-bg-element3 {
-        height: 80vw;
-        top: -28vw;
-        img {
-          left: -20vw;
-        }
-      }
-      &#schedule-bg-element4 {
-        height: 66vw;
-        img {
-          right: -5vw;
-        }
-      }
-      &#schedule-bg-element5 {
-        height: 50vw;
-        img {
-          left: 15%;
-        }
+
+    .positioner {
+      display: flex;
+      // height: 14vw;
+      svg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 20vw;
+        width: auto;
+        padding-right: 3rem;
       }
     }
   }

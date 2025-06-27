@@ -31,7 +31,7 @@ $artistsArgs = array(
 
 $artistQuery = new WP_Query($artistsArgs);
 
-$last_letter = ' ';
+$index_letter = ' ';
 
 ?>
 <div id="fullpage-texture"></div>
@@ -90,10 +90,10 @@ $last_letter = ' ';
                     ?>
         <div class="artist-container">
             <?php
-                        if (($sortable_name[0] != $last_letter)):
-                            echo "<span class='d1 artist-letter'>" . $sortable_name[0] . "</span>";
+                        if ((strtoupper($sortable_name[0]) != $index_letter)):
+                            echo "<span class='d1 artist-letter'>" . strtoupper($sortable_name[0]) . "</span>";
                         endif;
-                        $last_letter = $sortable_name[0];
+                        $index_letter = strtoupper($sortable_name[0]);
                         ?>
             <div class="artist-copy">
                 <a class="container-link" title="view <?php echo $displayName ?>"

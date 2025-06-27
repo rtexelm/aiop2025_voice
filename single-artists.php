@@ -215,7 +215,7 @@ foreach ($all_posts->posts as $key => $value) {
                 <?php echo "<p class='p1'>" . $project_description . "</p>" ?>
                 <?php
                         if ($project_link) {
-                            echo "<a class='button transparent' target='blank' href='" . esc_url($project_link['url']) . "'>" . esc_attr($project_link['title']) . "</a>";
+                            echo "<a target='blank' href='" . esc_url($project_link['url']) . "'>" . esc_attr($project_link['title']) . "</a>";
                         }
                         ?>
 
@@ -226,10 +226,11 @@ foreach ($all_posts->posts as $key => $value) {
                 <?php
 
                         if ($artist_1_bio) {
+                            echo "<h4 class='bold'>About the Artist(s)</h4>";
                             echo "<p class='bio'>" . $artist_1_bio . "</p>";
                         }
                         if ($artist_1_link) {
-                            echo "<a target='blank' class='button pink' href='" . esc_url($artist_1_link['url']) . "'>" . esc_attr($artist_1_link['title']) . "</a>";
+                            echo "<a target='blank'' href='" . esc_url($artist_1_link['url']) . "'>" . esc_attr($artist_1_link['title']) . "</a>";
                         }
                         // if ($artist_2_bio) {
                         //     echo "<p class='bio'>" . $artist_2_bio . "</p>";

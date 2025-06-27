@@ -46,6 +46,15 @@ main.artist-single {
       .project {
         margin-bottom: 2rem;
       }
+      a {
+        color: $lightestBlue;
+        &:visited {
+          color: $darkBlue;
+        }
+        &:hover {
+          color: $lightBlue;
+        }
+      }
     }
 
     .performances {

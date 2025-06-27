@@ -102,15 +102,6 @@
     padding-left: 3rem;
     padding-right: 3rem;
 
-    section.project-img {
-      // margin: 0 -3rem;
-      // right: 3rem;
-      // width: 90vh;
-      // height: 90vh;
-      // max-width: 800px;
-      // max-height: 800px;
-    }
-
     .project-info-grid {
       &::before {
         left: -3rem;
@@ -138,6 +129,11 @@
       }
       &#schedule-bg-element3 {
         height: 70vw;
+      }
+    }
+    .positioner {
+      svg {
+        height: 17vw;
       }
     }
   }
