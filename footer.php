@@ -156,11 +156,14 @@
 		        <p><a href="https://edwoodham.com/bio/" target="_blank">Ed Woodham,</a></br>
 		            Founder & Director
 		        </p>
-		        <p><a href="https://lauriewaxman.com" target="_blank">Laurie Waxman,</a></br>
-		            Designer
-		        </p>
 		        <p><a href="https://movingcultureprojects.com/" target="_blank">Robin Schatell,</a></br>
 		            Producer
+		        </p>
+		        <p><a href="https://www.katyausvitsky.com/" target="_blank">Katya Usvitsky,</a></br>
+		            Associate Producer
+		        </p>
+		        <p><a href="https://www.kaiakinghall.com/" target="_blank">Kaia King-Hall,</a></br>
+		            Curatorial Assistant
 		        </p>
 		        <p><a href="https://rossmabbett.com" target="_blank">Ross Mabbett,</a></br>
 		            Web Developer

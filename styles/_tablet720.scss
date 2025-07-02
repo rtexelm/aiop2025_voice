@@ -691,7 +691,7 @@
       display: flex;
       justify-content: center;
       svg {
-        max-width: 70%;
+        max-width: 50%;
         height: auto;
       }
     }
@@ -845,6 +845,7 @@
         img.partner-logo {
           grid-column: 1/4;
           width: 100%;
+          max-width: 200px;
         }
         .partner {
           grid-column: 4/13;

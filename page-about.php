@@ -20,6 +20,7 @@ $highlight  =   get_field('about_cs_highlight');
 $statement  =   get_field('about_cs_statement');
 $mission    =   get_field('about_aiop_mission');
 $history    =   get_field('about_aiop_history');
+$curator_bio =   get_field('about_curator_bio');
 $dedication =   get_field('about_dedication');
 $thanks     =   get_field('about_thanks');
 $volunteers =   get_field('about_volunteers');
@@ -95,6 +96,9 @@ $volunteers =   get_field('about_volunteers');
 
         <section class="people">
             <h2>People</h2>
+            <p class="p1" id="curator-bio">
+                <?php echo $curator_bio ?>
+            </p>
             <?php
             wp_reset_query();
 
@@ -179,7 +183,7 @@ $volunteers =   get_field('about_volunteers');
             <?php endif ?>
             <?php endwhile ?>
             <?php endif ?>
-            <section class="thinkers">
+            <!-- <section class="thinkers">
                 <h3 class="thinkers-title">Thinkers in Residence</h3>
 
                 <?php if ($thinkerQuery->have_posts()): ?>
@@ -193,26 +197,26 @@ $volunteers =   get_field('about_volunteers');
 
                             // $thinkcomma1 = $thinklink2 ? "," : "";
                             // $thinkcomma2 = $thinklink3 ? "," : "";
-                        ?>
+                ?>
 
                 <div class="thinker-item">
                     <h3 class="thinker-name"><?php echo $full_name ?></h3>
                     <div class="thinker-links">
                         <?php
-                                    if ($thinklink1) {
-                                        echo "<a target='blank' href='" . esc_url($thinklink1['url']) . "'>" . esc_attr($thinklink1['title']) . "</a>";
-                                    }
-                                    ?>
+                            if ($thinklink1) {
+                                echo "<a target='blank' href='" . esc_url($thinklink1['url']) . "'>" . esc_attr($thinklink1['title']) . "</a>";
+                            }
+                        ?>
                         <?php
-                                    if ($thinklink2) {
-                                        echo "<a target='blank' href='" . esc_url($thinklink2['url']) . "'>" . esc_attr($thinklink2['title']) . "</a>";
-                                    }
-                                    ?>
+                            if ($thinklink2) {
+                                echo "<a target='blank' href='" . esc_url($thinklink2['url']) . "'>" . esc_attr($thinklink2['title']) . "</a>";
+                            }
+                        ?>
                         <?php
-                                    if ($thinklink3) {
-                                        echo "<a target='blank' href='" . esc_url($thinklink3['url']) . "'>" . esc_attr($thinklink3['title']) . "</a>";
-                                    }
-                                    ?>
+                            if ($thinklink3) {
+                                echo "<a target='blank' href='" . esc_url($thinklink3['url']) . "'>" . esc_attr($thinklink3['title']) . "</a>";
+                            }
+                        ?>
                     </div>
                 </div>
                 <?php endif ?>
@@ -220,10 +224,10 @@ $volunteers =   get_field('about_volunteers');
                 <?php wp_reset_postdata(); ?>
                 <?php endif ?>
 
-            </section>
-            <div id="blog-button">
+            </section> -->
+            <!-- <div id="blog-button">
                 <a target="_blank" href="https://artinoddplaces.org/blog/" class="button brightblue">AiOP Blog</a>
-            </div>
+            </div> -->
         </section>
         <div class="positioner">
             <img class="cloud" id="cloud-03" src="<?php bloginfo('template_url'); ?>/assets/Cloud-03.png" />
@@ -316,10 +320,10 @@ $volunteers =   get_field('about_volunteers');
                 <h3>Thanks</h3>
                 <p><?php echo $thanks; ?></p>
             </div>
-            <div class="volunteers p2">
+            <!-- <div class="volunteers p2">
                 <h3>Volunteers</h3>
                 <p><?php echo $volunteers; ?></p>
-            </div>
+            </div>   -->
         </section>
         <div class="desert-illustration">
             <svg width="1016" height="337" viewBox="0 0 1016 337" fill="none" xmlns="http://www.w3.org/2000/svg">

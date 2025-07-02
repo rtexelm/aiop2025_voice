@@ -878,33 +878,25 @@ main.about .people {
   z-index: 1;
   position: relative;
   padding: 4rem 1.5rem;
-  color: #000;
 }
 main.about .people > * {
   z-index: 10;
 }
 main.about .people a {
-  color: #000;
+  color: #d2eff5;
 }
 main.about .people a:visited {
-  color: #443f43;
+  color: #0fa5dc;
 }
 main.about .people h2 {
   color: #fff;
   margin-bottom: 1rem;
 }
-main.about .people .staff-item .staff-name {
-  color: #000;
-}
 main.about .people .thinkers {
   margin-top: 3rem;
 }
 main.about .people .thinkers .thinkers-title {
-  color: #fff;
   margin-bottom: 0.5rem;
-}
-main.about .people .thinkers .thinker-item .thinker-name {
-  color: #000;
 }
 main.about .people .thinkers .thinker-item .thinker-links {
   display: flex;
@@ -2151,7 +2143,7 @@ Text Domain: aiop-voice
     justify-content: center;
   }
   main.press .title svg {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
   }
   main.press section.press-posts {
@@ -2320,6 +2312,7 @@ Text Domain: aiop-voice
   main.about .partners .partner-container img.partner-logo {
     grid-column: 1/4;
     width: 100%;
+    max-width: 200px;
   }
   main.about .partners .partner-container .partner {
     grid-column: 4/13;

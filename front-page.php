@@ -162,7 +162,7 @@ get_header();
                         municipality and the 20th edition of this iconic public visual and performance art festival.
                     </p>
                 </div>
-                <!-- <a class="button brightblue" href="<?php echo home_url(); ?>/about">About the festival</a> -->
+                <a class="button brightblue" href="<?php echo home_url(); ?>/about">About the festival</a>
             </div>
         </div>
     </section>
@@ -177,8 +177,8 @@ get_header();
                 </h2>
             </div>
             <div class="artists-buttons">
-                <!-- <a class="button lightblue" href="<?php echo home_url(); ?>/artists">Artists</a>
-                <a class="button lightpurple" href="<?php echo home_url(); ?>/schedule">Schedule</a> -->
+                <a class="button lightblue" href="<?php echo home_url(); ?>/artists">Artists</a>
+                <!-- <a class="button lightpurple" href="<?php echo home_url(); ?>/schedule">Schedule</a> -->
             </div>
             <div class="artists-list">
                 <ul class="p">

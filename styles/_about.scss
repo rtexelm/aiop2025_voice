@@ -73,9 +73,9 @@ main.about {
     }
 
     a {
-      color: $black;
+      color: $lightestBlue;
       &:visited {
-        color: #443f43;
+        color: $brightBlue;
       }
     }
     h2 {
@@ -84,18 +84,18 @@ main.about {
     }
     .staff-item {
       .staff-name {
-        color: $black;
+        // color: $lightestBlue;
       }
     }
     .thinkers {
       margin-top: 3rem;
       .thinkers-title {
-        color: $white;
+        // color: $white;
         margin-bottom: 0.5rem;
       }
       .thinker-item {
         .thinker-name {
-          color: $black;
+          // color: $black;
         }
         .thinker-links {
           display: flex;
@@ -104,7 +104,7 @@ main.about {
       }
     }
 
-    color: $black;
+    // color: $l;
 
     .staff-item,
     .thinker-item {
