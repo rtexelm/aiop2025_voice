@@ -150,22 +150,22 @@
 		        </svg>
 		    </div>
 		    <div class="footer-col" id="footer-people">
-		        <p><a href="http://irrationalexhibits.com/#1" target="_blank">Deborah Oliver</a>, </br>
+		        <p><a href="http://irrationalexhibits.com/#1" target="_blank">Deborah Oliver</a> </br>
 		            Curator
 		        </p>
-		        <p><a href="https://edwoodham.com/bio/" target="_blank">Ed Woodham,</a></br>
+		        <p><a href="https://edwoodham.com/bio/" target="_blank">Ed Woodham</a></br>
 		            Founder & Director
 		        </p>
-		        <p><a href="https://movingcultureprojects.com/" target="_blank">Robin Schatell,</a></br>
+		        <p><a href="https://movingcultureprojects.com/" target="_blank">Robin Schatell</a></br>
 		            Producer
 		        </p>
-		        <p><a href="https://www.katyausvitsky.com/" target="_blank">Katya Usvitsky,</a></br>
+		        <p><a href="https://www.katyausvitsky.com/" target="_blank">Katya Usvitsky</a></br>
 		            Associate Producer
 		        </p>
-		        <p><a href="https://www.kaiakinghall.com/" target="_blank">Kaia King-Hall,</a></br>
+		        <p><a href="https://www.kaiakinghall.com/" target="_blank">Kaia King-Hall</a></br>
 		            Curatorial Assistant
 		        </p>
-		        <p><a href="https://rossmabbett.com" target="_blank">Ross Mabbett,</a></br>
+		        <p><a href="https://rossmabbett.com" target="_blank">Ross Mabbett</a></br>
 		            Web Developer
 		        </p>
 		    </div>

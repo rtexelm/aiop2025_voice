@@ -97,9 +97,10 @@ get_header();
     </section>
     <section id="dates">
         <h2 class="date-text h1">
-            <span class="month">July 25&ndash;27 2025</span></br>
-            <span class="city">West Hollywood,</span></br>
-            <span class="state">California</span>
+            <span>Art in Odd Places</span></br>
+            <span>2025 VOICE</span></br>
+            <span class="month">July 25&ndash;27</span></br>
+            <span class="city">West Hollywood</span></br>
 
         </h2>
         <div class="date-locations h3">
@@ -182,43 +183,34 @@ get_header();
             </div>
             <div class="artists-list">
                 <ul class="p">
-                    <li>Beck+Col with Tetiana Sklyarova and Kayla Aguila</li>
-                    <li>Brian Black & Zane Alexander S.B.</li>
-                    <li>Chelsea Boxwell</li>
-                    <li>Oleksandr Brzhezytskyi</li>
-                    <li>jinseok choi</li>
-                    <li>Oscar Corona</li>
-                    <li>Issaiha Cunningham</li>
-                    <li>Andrea Derujinsky</li>
-                    <li>Yadira Dockstader</li>
-                    <li>Paul Donald</li>
-                    <li>Scott Froschauer</li>
-                    <li>Kiyo Gutierrez</li>
-                    <li>Terry S. Hardy</li>
-                    <li>Asuka Hisa</li>
-                    <li>Marcus Kuiland-Nazario</li>
-                    <li>Ibuki Kuramochi</li>
-                    <li>Mathilda LaZelle Moore</li>
-                    <li>Olivia Leiter</li>
-                    <li>Curt Lemieux & Marley Van Peebles</li>
-                    <li>Simon Leung</li>
-                    <li>Association of Hysteric Curators: Maya Mackrandilal, Mary Anna Pomonis, Monet Clark, Marjan
-                        Vayghan, Michiko Yao & Taryn Lee</li>
-                    <li>Elana Mann & Sharon Chohi Kim</li>
-                    <li>Kacie Lyn Martinez</li>
-                    <li>Jeff McMahon & William Roper</li>
-                    <li>Cade Moga</li>
-                    <li>Monica Moreno</li>
-                    <li>Dakota Noot</li>
-                    <li>Mehregan Pezeshki & Cesar Osorio</li>
-                    <li>Jynx Prado</li>
-                    <li>Joseph Ravens</li>
-                    <li>Renée Reizman</li>
-                    <li>christy roberts berkowitz & Abbe Land</li>
-                    <li>Saun Santipreecha & Luc Trahand</li>
-                    <li>Constance Jaquay Strickland</li>
-                    <li>Wes Weisbaum</li>
-                    <li>David Yashin</li>
+                    <?php
+                    wp_reset_query();
+
+                    $artistsArgs = array(
+                        'post_type' => 'artists',
+                        'meta_key' => 'artist_name',
+                        'orderby' => 'meta_value',
+                        'order'    => 'ASC',
+                        'posts_per_page' => -1
+                    );
+
+                    $artistQuery = new WP_Query($artistsArgs);
+                    ?>
+
+                    <?php if ($artistQuery->have_posts()): ?>
+                    <?php while ($artistQuery->have_posts()): $artistQuery->the_post(); ?>
+
+                    <?php if (function_exists('get_field')): ?>
+                    <?php
+
+                                $artist_name          = get_field('artist_name');
+                                ?>
+                    <li><?php echo $artist_name; ?></li>
+                    <?php endif ?>
+                    <?php endwhile ?>
+                    <?php wp_reset_postdata(); ?>
+                    <?php endif ?>
+                </ul>
             </div>
         </div>
     </section>

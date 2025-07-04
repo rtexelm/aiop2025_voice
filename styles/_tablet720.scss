@@ -799,7 +799,7 @@
         }
         .staff-links {
           display: flex;
-          gap: 1.5rem;
+          flex-flow: column nowrap;
           grid-column: 7/11;
           grid-row: 1/2;
         }

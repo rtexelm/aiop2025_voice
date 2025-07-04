@@ -1,7 +1,7 @@
 @use "constants" as *;
 
 div#about-background {
-  background: linear-gradient($brightBlue 0%, $lightPurple 50%, $deepBlue 100%);
+  background: linear-gradient(#0063af 0%, $brightPurple 80%, $lightPurple 100%);
 }
 
 main.about {
@@ -26,7 +26,7 @@ main.about {
 
     .c-statement {
       p {
-        color: $black;
+        color: $white;
       }
       .p1 {
         margin-bottom: 1rem;
@@ -64,6 +64,8 @@ main.about {
   }
 
   .people {
+    background: linear-gradient($lightBlue 0%, #5dd3ff 100%);
+
     z-index: 1;
     position: relative;
     padding: 4rem 1.5rem;
@@ -73,29 +75,32 @@ main.about {
     }
 
     a {
-      color: $lightestBlue;
+      color: $darkBlue;
       &:visited {
-        color: $brightBlue;
+        color: $brightPurple;
       }
     }
     h2 {
-      color: $white;
+      color: $darkBlue;
       margin-bottom: 1rem;
     }
+    h3 {
+      color: $darkBlue;
+    }
     .staff-item {
-      .staff-name {
-        // color: $lightestBlue;
+      color: $darkBlue;
+
+      .staff-links {
+        display: block;
       }
     }
     .thinkers {
       margin-top: 3rem;
       .thinkers-title {
-        // color: $white;
         margin-bottom: 0.5rem;
       }
       .thinker-item {
         .thinker-name {
-          // color: $black;
         }
         .thinker-links {
           display: flex;
@@ -109,7 +114,7 @@ main.about {
     .staff-item,
     .thinker-item {
       margin-bottom: 1rem;
-      border-top: 1px solid $beige;
+      border-top: 1px solid $darkBlue;
       padding-top: 0.5rem;
     }
 
@@ -133,7 +138,7 @@ main.about {
   }
 
   .partners {
-    background: linear-gradient($lightBlue 0%, $brightBlue 100%);
+    background: linear-gradient($lightBlue 0%, #5dd3ff 100%);
     position: relative;
     padding: 2rem 1.5rem;
     a,
@@ -191,7 +196,11 @@ main.about {
   }
 
   .support-background {
-    background: linear-gradient($deepBlue 0%, $brightPurple 100%);
+    background: linear-gradient(
+      #0063af 0%,
+      $brightPurple 80%,
+      $lightPurple 100%
+    );
   }
   .support {
     z-index: 1;

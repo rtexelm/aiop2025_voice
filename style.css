@@ -818,7 +818,7 @@ Tags: voice, blue
 Text Domain: aiop-voice
 */
 div#about-background {
-  background: linear-gradient(#0fa5dc 0%, #cd44e8 50%, #0a008e 100%);
+  background: linear-gradient(#0063af 0%, #7d30be 80%, #cd44e8 100%);
 }
 
 main.about {
@@ -844,7 +844,7 @@ main.about .voice .c-statement {
   z-index: 1;
 }
 main.about .voice .c-statement p {
-  color: #000;
+  color: #fff;
 }
 main.about .voice .c-statement .p1 {
   margin-bottom: 1rem;
@@ -875,6 +875,7 @@ main.about .festival .history h2 {
   margin-bottom: 0.5rem;
 }
 main.about .people {
+  background: linear-gradient(#a9efff 0%, #5dd3ff 100%);
   z-index: 1;
   position: relative;
   padding: 4rem 1.5rem;
@@ -883,14 +884,23 @@ main.about .people > * {
   z-index: 10;
 }
 main.about .people a {
-  color: #d2eff5;
+  color: #0b0050;
 }
 main.about .people a:visited {
-  color: #0fa5dc;
+  color: #7d30be;
 }
 main.about .people h2 {
-  color: #fff;
+  color: #0b0050;
   margin-bottom: 1rem;
+}
+main.about .people h3 {
+  color: #0b0050;
+}
+main.about .people .staff-item {
+  color: #0b0050;
+}
+main.about .people .staff-item .staff-links {
+  display: block;
 }
 main.about .people .thinkers {
   margin-top: 3rem;
@@ -905,7 +915,7 @@ main.about .people .thinkers .thinker-item .thinker-links {
 main.about .people .staff-item,
 main.about .people .thinker-item {
   margin-bottom: 1rem;
-  border-top: 1px solid #f2dec4;
+  border-top: 1px solid #0b0050;
   padding-top: 0.5rem;
 }
 main.about .people #blog-button {
@@ -925,7 +935,7 @@ main.about .city-illustration svg {
   margin-right: 8vw;
 }
 main.about .partners {
-  background: linear-gradient(#a9efff 0%, #0fa5dc 100%);
+  background: linear-gradient(#a9efff 0%, #5dd3ff 100%);
   position: relative;
   padding: 2rem 1.5rem;
 }
@@ -969,7 +979,7 @@ main.about .partners .button {
   color: #d2eff5;
 }
 main.about .support-background {
-  background: linear-gradient(#0a008e 0%, #7d30be 100%);
+  background: linear-gradient(#0063af 0%, #7d30be 80%, #cd44e8 100%);
 }
 main.about .support {
   z-index: 1;
@@ -2264,7 +2274,7 @@ Text Domain: aiop-voice
   }
   main.about .people .staff-item .staff-links {
     display: flex;
-    gap: 1.5rem;
+    flex-flow: column nowrap;
     grid-column: 7/11;
     grid-row: 1/2;
   }

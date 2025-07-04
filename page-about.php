@@ -69,7 +69,7 @@ $volunteers =   get_field('about_volunteers');
                 <div class="p1">
                     <?php echo $highlight ?>
                 </div>
-                <div>
+                <div class="p2">
                     <?php echo $statement ?>
                 </div>
             </div>
@@ -81,24 +81,24 @@ $volunteers =   get_field('about_volunteers');
         <section class="festival">
             <div class="mission">
                 <h2>Mission</h2>
-                <p>
+                <div class="p2">
                     <?php echo $mission ?>
-                </p>
+                </div>
             </div>
             <div class="festival-shape"></div>
             <div class="history">
                 <h2>History</h2>
-                <p>
+                <div class="p2">
                     <?php echo $history ?>
-                </p>
+                </div>
             </div>
         </section>
 
         <section class="people">
             <h2>People</h2>
-            <p class="p1" id="curator-bio">
+            <!-- <div class="p2" id="curator-bio">
                 <?php echo $curator_bio ?>
-            </p>
+            </div> -->
             <?php
             wp_reset_query();
 
@@ -161,7 +161,7 @@ $volunteers =   get_field('about_volunteers');
                     ?>
             <div class="staff-item">
                 <h3 class="staff-name"><?php echo $full_name ?></h3>
-                <p class="staff-title"><?php echo $title ?></p>
+                <p class="staff-title p2"><?php echo $title ?></p>
                 <div class="staff-links">
                     <?php
                                 if ($link1) {
@@ -235,38 +235,9 @@ $volunteers =   get_field('about_volunteers');
         <div class="positioner">
             <img class="cloud" id="cloud-04" src="<?php bloginfo('template_url'); ?>/assets/Cloud-04.png" />
         </div>
-        <div class="city-illustration">
-            <svg width="755" height="337" viewBox="0 0 755 337" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="126" width="284" height="211" fill="url(#paint0_linear_524_2915)" />
-                <g style="mix-blend-mode:overlay" opacity="0.8">
-                    <path d="M142 24C142 10.7452 152.745 0 166 0H402C415.255 0 426 10.7452 426 24V337H142V24Z"
-                        fill="url(#paint1_linear_524_2915)" />
-                </g>
-                <path d="M455 276C455 193.157 522.157 126 605 126C687.843 126 755 193.157 755 276V337H455V276Z"
-                    fill="url(#paint2_linear_524_2915)" />
-                <defs>
-                    <linearGradient id="paint0_linear_524_2915" x1="142" y1="337" x2="142" y2="126"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#7D30BE" />
-                        <stop offset="1" stop-color="#0FA5DC" />
-                    </linearGradient>
-                    <linearGradient id="paint1_linear_524_2915" x1="142" y1="168.5" x2="426" y2="168.5"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#0FA5DC" />
-                        <stop offset="1" stop-color="#A9EFFF" />
-                    </linearGradient>
-                    <linearGradient id="paint2_linear_524_2915" x1="587.5" y1="347" x2="587.5" y2="99"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#7D30BE" />
-                        <stop offset="1" stop-color="#A9EFFF" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-
     </div>
 
-    <section class="partners">
+    <!-- <section class="partners">
 
         <h2>Partners</h2>
 
@@ -290,7 +261,7 @@ $volunteers =   get_field('about_volunteers');
                     $partner_image          = get_field('partner_image');
                     $partner_description    = get_field('partner_description');
                     $partner_link           = get_field('partner_link');
-                ?>
+        ?>
 
         <div class="partner-container">
 
@@ -307,7 +278,7 @@ $volunteers =   get_field('about_volunteers');
         <?php endwhile ?>
         <?php wp_reset_postdata(); ?>
         <?php endif ?>
-    </section>
+    </section> -->
 
     <div class="support-background">
         <section class="support">
@@ -320,37 +291,76 @@ $volunteers =   get_field('about_volunteers');
                 <h3>Thanks</h3>
                 <p><?php echo $thanks; ?></p>
             </div>
-            <!-- <div class="volunteers p2">
-                <h3>Volunteers</h3>
+            <div class="volunteers p2">
+                <h3>Assistants</h3>
                 <p><?php echo $volunteers; ?></p>
-            </div>   -->
+            </div>
         </section>
         <div class="desert-illustration">
-            <svg width="1016" height="337" viewBox="0 0 1016 337" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="732" y="126" width="284" height="211" fill="url(#paint0_linear_524_2923)" />
-                <path d="M0 329C0 246.157 67.1573 179 150 179C232.843 179 300 246.157 300 329V337H0V329Z"
-                    fill="url(#paint1_linear_524_2923)" />
-                <path opacity="0.8"
-                    d="M277 0C299.091 0 317 17.9086 317 40V164H342V93C342 76.4315 355.431 63 372 63C388.569 63 402 76.4315 402 93V194C402 210.569 388.569 224 372 224H317V337H237V287H185L184.226 286.99C168.015 286.579 155 273.31 155 257V156C155 139.431 168.431 126 185 126C201.569 126 215 139.431 215 156V227H237V40C237 17.9086 254.909 0 277 0Z"
-                    fill="url(#paint2_linear_524_2923)" />
+            <svg width="1047" height="386" viewBox="0 0 1047 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M217 377C217 294.157 284.157 227 367 227V227C449.843 227 517 294.157 517 377V385H217V377Z"
+                    fill="url(#paint0_linear_942_813)" />
+                <path
+                    d="M236.102 357.977C198.758 350.68 161.19 269.553 142.098 198.299C141.812 197.441 140.724 195.638 138.664 195.295C136.088 194.865 130.771 198.607 132.574 207C145.574 267.502 164.574 312 196.574 352.499C206.795 365.435 198.557 378.581 204.996 385.019H269.153C270.584 378.438 265.977 363.815 236.102 357.977Z"
+                    fill="url(#paint1_linear_942_813)" />
+                <path
+                    d="M210.146 75.5166C170.5 82.8607 157.301 101.01 145.293 121.732C135.798 138.118 129.532 162.495 133.05 183.863C123.885 166.47 106.258 150.285 90.3574 141.071C69.6347 129.064 49.3821 119.494 14.292 127.731L129.304 194.373C109.967 186.359 82.7528 187.105 63.0859 192.342C40.0222 198.483 19.0019 205.988 0 236.219L125.282 202.86C106.464 211.313 88.8497 229.842 79.1533 246.576C67.1455 267.299 57.6398 287.589 66.7246 323.17L137.816 200.482L251.506 283.084C245.925 246.139 229.053 231.386 209.677 217.309C193.913 205.855 169.936 196.165 148.943 196.561L276.25 162.663C244.307 144.29 222.305 148.111 199.241 154.252C180.713 159.185 158.453 171.273 145.428 187.207L210.146 75.5166Z"
+                    fill="url(#paint2_linear_942_813)" />
+                <path
+                    d="M476.904 98.7771C438.459 86.6241 418.277 96.4389 397.938 109.086C381.855 119.086 364.867 137.656 357.928 158.17C358.014 138.51 350.063 115.94 340.359 100.333C327.713 79.994 314.335 62.028 279.491 52.805L349.681 165.686C336.381 149.523 312.01 137.39 292.189 132.768C268.946 127.348 246.864 124.092 215.883 141.843L342.142 171.287C321.559 169.903 297.303 177.978 280.879 188.19C260.54 200.837 242.612 214.278 233.907 249.953L354.323 175.08L415.845 301.426C428.285 266.193 420.327 245.241 409.842 223.708C401.311 206.189 384.703 186.366 365.988 176.848L494.288 206.768C474.729 175.537 453.514 168.567 430.27 163.147C411.597 158.792 386.268 158.998 367.281 166.94L476.904 98.7771Z"
+                    fill="url(#paint3_linear_942_813)" />
+                <path
+                    d="M278.896 331.5C288.818 284.537 330.896 201 348.896 171C349.396 168.833 351.996 165.3 358.396 168.5C366.396 172.5 356.896 187.5 338.396 220C326.148 241.517 296.896 317.5 299.396 351C301.396 377.8 315.229 383.167 324.896 385L253.396 385C253.396 349.5 271.396 367 278.896 331.5Z"
+                    fill="url(#paint4_linear_942_813)" />
+                <rect x="924" y="209" width="13" height="176" fill="#320784" />
+                <path
+                    d="M824.076 339L1033.92 338.999C1033.92 331.552 1039.78 325.513 1047 325.513L1047 231.486C1039.78 231.486 1033.92 225.448 1033.92 218L824.076 218.001C824.076 225.448 818.221 231.487 811.001 231.487L811 325.51C818.221 325.51 824.076 331.549 824.076 338.996V339Z"
+                    fill="url(#paint5_linear_942_813)" style="mix-blend-mode:hard-light" />
+                <path
+                    d="M824.076 339L1033.92 338.999C1033.92 331.552 1039.78 325.513 1047 325.513L1047 231.486C1039.78 231.486 1033.92 225.448 1033.92 218L824.076 218.001C824.076 225.448 818.221 231.487 811.001 231.487L811 325.51C818.221 325.51 824.076 331.549 824.076 338.996V339Z"
+                    fill="url(#paint6_linear_942_813)" />
+                <path
+                    d="M1027.96 223C1028.43 230.171 1033.99 235.944 1041 236.449V320.536C1033.99 321.041 1028.43 326.816 1027.96 333.986H829.042C828.567 326.815 823.009 321.039 816 320.533V236.449C823.008 235.944 828.566 230.171 829.042 223H1027.96Z"
+                    stroke="#CD44E8" stroke-width="2" />
                 <defs>
-                    <linearGradient id="paint0_linear_524_2923" x1="826" y1="466" x2="826" y2="137.5"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#CD44E8" />
-                        <stop offset="1" stop-color="#0FA5DC" />
-                    </linearGradient>
-                    <linearGradient id="paint1_linear_524_2923" x1="177" y1="179" x2="177" y2="347.109"
+                    <linearGradient id="paint0_linear_942_813" x1="394" y1="227" x2="394" y2="395.109"
                         gradientUnits="userSpaceOnUse">
                         <stop stop-color="#D4F2F9" />
                         <stop offset="1" stop-color="#CD44E8" />
                     </linearGradient>
-                    <linearGradient id="paint2_linear_524_2923" x1="233.5" y1="11" x2="233.5" y2="337"
+                    <linearGradient id="paint1_linear_942_813" x1="180.75" y1="237.5" x2="225.787" y2="385.019"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CD44E8" />
+                        <stop offset="1" stop-color="#0A008E" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_942_813" x1="188.454" y1="83.6002" x2="188.454" y2="323.17"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#A9EFFF" />
+                        <stop offset="1" stop-color="#0FA5DC" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_942_813" x1="453.958" y1="95.7158" x2="341.35" y2="307.171"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CD44E8" />
+                        <stop offset="1" stop-color="#0FA5DC" />
+                    </linearGradient>
+                    <linearGradient id="paint4_linear_942_813" x1="307.323" y1="167.217" x2="307.323" y2="385"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0A008E" />
+                        <stop offset="1" stop-color="#7D30BE" />
+                    </linearGradient>
+                    <linearGradient id="paint5_linear_942_813" x1="811" y1="275.925" x2="1017.84" y2="268.694"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CD44E8" />
+                        <stop offset="1" stop-color="#7D30BE" />
+                    </linearGradient>
+                    <linearGradient id="paint6_linear_942_813" x1="889.113" y1="412.976" x2="889.113" y2="224.595"
                         gradientUnits="userSpaceOnUse">
                         <stop stop-color="#CD44E8" />
                         <stop offset="1" stop-color="#0FA5DC" />
                     </linearGradient>
                 </defs>
             </svg>
+
         </div>
     </div>
 
