@@ -117,8 +117,9 @@ get_header();
                     Sunday July 27</br>
                     Sunset Boulevard
                 </li>
+                <li>4&ndash;9pm</li>
                 <li>
-                    <!-- <a class="button brightpurple black" href="<?php echo home_url(); ?>/schedule">Schedule</a> -->
+                    <a class="button brightpurple" href="<?php echo home_url(); ?>/schedule">Schedule</a>
                 </li>
             </ul>
         </div>
