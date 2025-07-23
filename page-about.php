@@ -291,10 +291,6 @@ $volunteers =   get_field('about_volunteers');
                 <h3>Thanks</h3>
                 <p><?php echo $thanks; ?></p>
             </div>
-            <div class="volunteers p2">
-                <h3>Assistants</h3>
-                <p><?php echo $volunteers; ?></p>
-            </div>
         </section>
         <div class="desert-illustration">
             <svg width="1047" height="386" viewBox="0 0 1047 386" fill="none" xmlns="http://www.w3.org/2000/svg">
