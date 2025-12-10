@@ -278,7 +278,14 @@ $sunday     = get_field('sunday_schedule');
 
 
             <div class="project-schedule">
-                <h2 class="fest-header">Sunset Boulevard</h2>
+                <div class="fest-header">
+                    <h2>
+                        Sunset Boulevard
+                    </h2>
+                    <h3>
+                        From N Sherbourne Drive to N Doheny Drive
+                    </h3>
+                </div>
 
                 <div class="listing-container">
                     <?php echo $sunday; ?>

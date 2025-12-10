@@ -1254,7 +1254,6 @@ main.schedule div.day#saturday, main.schedule div.day#sunday {
   margin-top: 3rem;
 }
 main.schedule div.day h2 {
-  margin-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
 main.schedule div.day .project-schedule {
@@ -1262,7 +1261,10 @@ main.schedule div.day .project-schedule {
   padding-top: 1rem;
 }
 main.schedule div.day .project-schedule .fest-header {
-  font-variation-settings: "wght" 600;
+  margin-bottom: 1.5rem;
+}
+main.schedule div.day .project-schedule .fest-header h2 {
+  margin-bottom: 0rem;
 }
 main.schedule div.day .listing-container {
   position: relative;
